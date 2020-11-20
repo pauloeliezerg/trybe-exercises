@@ -1,0 +1,30 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    color: orange;
+    font-family: sans-serif;
+    font-size: 65px;
+}
+
+p {
+    font-size: 3em;
+    font-weight: 600px;
+    font-style: oblique 90deg; // pesquisando sobre as notações do estilo oblique achei que o parametro vai de -90 a 90 graus mas o Chrome só exibe uma angulação default, acredito que 20º
+    line-height: 15px;
+    text-align: justify; // aparentemente justificar não faz diferença nessa page do Chrome
+    text-decoration: teal; // fui incapaz de compreender ou fazer uso
+}
+
+ul {
+    background-color: cyan;
+}
+#yellow {
+    background-color: yellow;
+}
+#red {
+    background-color: red;
+}
+#brown {
+    background-color: brown;
+}
