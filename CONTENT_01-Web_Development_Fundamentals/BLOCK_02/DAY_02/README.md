@@ -1,0 +1,26 @@
+# Exercises
+
+- [x] To do the following exercises, you must use the project with JavaScript code, located inside your trybe-exercises folder, which you created in previous classes.
+- [x] Navigate to the project root with JavaScript code;
+- [x] Check that there is nothing without "committing" using git status;
+- [x] If there is anything, check if it is necessary and commit, or remove it.
+- [x] Create a new branch with the name javascript-changes and check it out;
+- [x] In the .js file, in line # 3, add the comment: "Eu sou Tryber e...";
+- [x] Make a 'git add filename-extension.extension';
+- [x] Now a 'git commit -m "Message you would like"';
+- [x] And finally a 'git push -u origin javascript-changes';
+- [x] Open a _Pull Request_ with a detailed description:
+- [x] Return to the main branch, master, with the command: git checkout master;
+- [x] Check that you are in the master branch, with the command: git branch;
+- [x] Create a new javascript-updates branch from the master and check it out;
+- [x] In the same .js file that you modified in step 4, also in line # 3 add the comment: "Vou ter muito sucesso na programação!";
+- [x] Make a git add filename-extension.extension
+- [x] Now a git commit -m "Message you would like"
+- [x] and finally a git push -u origin javascript-updates
+- [x] Open a Pull Request with a friendly description.
+- [x] On Slack, look for the "code-review- *" channel for your class, and let them know you've reached this point. The next step will be to conduct a Code Review (CR) - [x] of the project of other student people. Enter at least one Pull Request and leave some comments for your colleagues;
+- [x] Now merge the javascript-changes and javascript-updates branches into the master branch, using the Pull Request:
+- [x] First, go to the first Pull Request page (branch javascript-changes) and merge by clicking the green "Merge pull request" button;
+- [x] Now, go to the page of the other Pull Request (branch javascript-updates) and try to merge by clicking the same button. Did you notice that it is blocked? This is because this Pull Request is trying to change the same line of code with different content, and Git is unable to determine for itself which of the two lines is the correct one.
+- [x] You will have to resolve this conflict before "diving" the Pull Request. Click on the "Resolve conflicts" button, choose one of the two versions of the text (remember to delete the lines with <<<<<<< and >>>>>>>, they are created only to give a more visual identification to the problem). Then click on "Mark as resolved" and then on "Commit merge".
+- [x] You should now be able to "dip" your Pull Request normally. 😎

@@ -1,0 +1,10 @@
+phrase 1
+phrase br
+phrase 2
+phrase 3
+phrase 4
+phrase br
+phrase br
+phrase 5
+Peru
+Turkey
