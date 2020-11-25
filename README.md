@@ -6,26 +6,26 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 The program has more than 1,500 hours of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
-## Web Development Fundamentals :white_check_mark:
+## Web Development Fundamentals :hourglass_flowing_sand:
 
 ##### Block 1: Intro - Unix, Bash & Shell Script
 
-- [ ] 1-3: _Unix & Bash - Part 1_
-- [ ] 1-4: _Unix & Bash - Part 2_
+- [x] 1-3: _Unix & Bash - Part 1_
+- [x] 1-4: _Unix & Bash - Part 2_
 
 ##### Block 2: Git & GitHub
 
-- [ ] 2-1: _Meaning and usage_
-- [ ] 2-2: _Understanding commands_
-- [ ] 2-3: _Internet - How it works_
+- [x] 2-1: _Meaning and usage_
+- [x] 2-2: _Understanding commands_
+- [x] 2-3: _Internet - How it works_
 
 ##### Block 3: Intro - HTML & CSS
 
-- [ ] 3-1: _HTML & CSS - Page structures_
-- [ ] 3-2: _HTML & CSS - CSS - getting started_
-- [ ] 3-3: _HTML & CSS - Selectors and positioning_
-- [ ] 3-4: _Semantic HTML_
-- [ ] 3-5: _[Project - HTML & CSS]()_
+- [x] 3-1: _HTML & CSS - Page structures_
+- [x] 3-2: _HTML & CSS - CSS - getting started_
+- [x] 3-3: _HTML & CSS - Selectors and positioning_
+- [x] 3-4: _Semantic HTML_
+- [x] 3-5: _[Project - HTML & CSS]()_
 
 ##### Block 4: Intro - JavaScript
 
