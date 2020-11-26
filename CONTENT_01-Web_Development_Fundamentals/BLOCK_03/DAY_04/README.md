@@ -13,6 +13,6 @@
 	- [x] Add, for each section, paragraph (s) describing the chosen fact. Highlight impressive features related to the suit you chose, in order to reinforce the Stomatopoda's uniqueness. For example: if you create a section detailing the animal's powerful punch, it would be interesting to highlight the speed of that punch (80km / h) in bold.
 	- [x] Add an image for each section as a way of illustrating the fact.
 	- [x] Finally, add a section of bibliographic references, containing a list of all the links that were used as a basis to compile the page in question.
-- [ ] Add content adjacent to the article, providing a link to this video, which shows the animal in action.
-- [ ] Add a footer to the page, showing something like "Content compiled by <insert your name>, <current year>".
+- [x] Add content adjacent to the article, providing a link to this video, which shows the animal in action.
+- [x] Add a footer to the page, showing something like "Content compiled by 'insert your name', 'current year'".
 	Note: for this exercise, it is mandatory to use at least elements with the following tags: header, nav, article, section, h1, h2, h3, aside, footer, table and img.
