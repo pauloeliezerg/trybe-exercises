@@ -1,11 +1,11 @@
 # Exercises
 
 - [x] Add a header on the page with the title Punch at 80km / h: Meet Stomatopoda.
-- [ ] Add a set of links that represent the navigation area of ​​the website.
-- [ ] Create a link called Home.
-- [ ] Create a link called About.
-- [ ] Create a link called Contact.
-- [ ] Create an article that will contain the interesting facts about Stomatopoda. The article will be subtitled Facts about Stomatopoda. Follow an animal-inspired website to get facts.
+- [x] Add a set of links that represent the navigation area of ​​the website.
+- [x] Create a link called Home.
+- [x] Create a link called About.
+- [x] Create a link called Contact.
+- [x] Create an article that will contain the interesting facts about Stomatopoda. The article will be subtitled Facts about Stomatopoda. Follow an animal-inspired website to get facts.
 - [ ] Divide the article into sections, organizing it as follows:
 	- [ ] A first section containing general information about the animal. The subtitle for this section is at your discretion. It is necessary that its scientific name, which is Odontodactylus scyllarus, appear in this section in italics. In addition, there must be tabular information regarding their scientific classification, in particular: Kingdom, Phylum, Subphylum, Class, Subclass and Order. You can get such information from Wikipedia.
 	- [ ] The other sections relate to the interesting facts you chose about the animal. For each chosen fact you will create a section.
