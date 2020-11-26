@@ -1,9 +1,6 @@
 # Exercises
 
-- [ ] The purpose of these exercises is to put into practice what you have just learned about semantic HTML.
-- [ ] To this end, we will create a page that features one of the most impressive animals that exists: Stomatopoda. The styling of the page is up to you. 😉
-- [ ] For better organization, make commits to each completed task. Let's go to the exercises:
-- [ ] Add a header on the page with the title Punch at 80km / h: Meet Stomatopoda.
+- [x] Add a header on the page with the title Punch at 80km / h: Meet Stomatopoda.
 - [ ] Add a set of links that represent the navigation area of ​​the website.
 - [ ] Create a link called Home.
 - [ ] Create a link called About.
