@@ -37,3 +37,41 @@ for (let index = 0; index < 25; index += 1) {
 }
 console.log(oneToTwentyFive);
 console.log(oneToTwentyFiveDividedByTwo);
+
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secundaryIndex = 0; secundaryIndex < index; secundaryIndex += 1) {
+        if(numbers[index] < numbers[secundaryIndex]) {
+            let aux = numbers[index];
+            numbers[index] = numbers[secundaryIndex];
+            numbers[secundaryIndex] = aux;
+        }
+    }
+}
+
+console.log(numbers);
+
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    for (let secundaryIndex = 0; secundaryIndex < index; secundaryIndex += 1) {
+        if(numbers[index] > numbers[secundaryIndex]) {
+            let aux = numbers[index];
+            numbers[index] = numbers[secundaryIndex];
+            numbers[secundaryIndex] = aux;
+        }
+    }
+}
+
+console.log(numbers);
+
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let arrayInnerMultiplication = [];
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if(numbers[index+1]) arrayInnerMultiplication.push(numbers[index] * numbers[index+1]);
+    else arrayInnerMultiplication.push(numbers[index] * 2);
+}
+
+console.log(arrayInnerMultiplication);
