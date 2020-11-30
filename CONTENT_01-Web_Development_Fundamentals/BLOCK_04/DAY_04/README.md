@@ -11,7 +11,7 @@ let info = {
 - [x] Print a welcome message on the console to the character above, including her name.
 Expected value on the console:
     Bem vinda, Margarida
-- [ ] Insert a new property in the object with the key name "recurring" and the value "Yes" and then print the object on the console. Expected value on the console:
+- [x] Insert a new property in the object with the key name "recurring" and the value "Yes" and then print the object on the console. Expected value on the console:
     {
     personagem: 'Margarida',
     origem: 'Pato Donald',
