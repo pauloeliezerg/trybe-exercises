@@ -12,7 +12,7 @@ for (let index = 0; index < n; index += 1) {
 
 console.log(line);
 
-line = [];
+line = []; //reseting "line" value to a empty string
 
 for (let index = 0; index < n; index += 1) {
     line += aster;
@@ -70,3 +70,37 @@ else {
 }
 
 console.log(line);
+
+line = [];
+lineCounter = 0;
+
+if (n%2 != 0) {
+    for (let index = 0; index < middleCeil; index += 1) {
+        for (let secondaryIndex = n-1; secondaryIndex >= 0; secondaryIndex -= 1) {
+            if (secondaryIndex == middleFloor + lineCounter || secondaryIndex == middleFloor - lineCounter || lineCounter == middleFloor)
+                line += aster;
+            else
+                line += space;
+            if (secondaryIndex == 0) {
+                lineCounter += 1;
+                line += breakline;
+            }
+        }
+    }
+    console.log(line);
+}
+else
+    console.log('Número inválido!');
+
+let primeNumberCheck = 11;
+let divisorCountIndex = 0;
+
+for (let index = 1; index <= primeNumberCheck; index += 1) {
+    if (primeNumberCheck%index == 0)
+        divisorCountIndex += 1;
+}
+
+if (divisorCountIndex < 3)
+    console.log('Número primo!');
+else
+    console.log('Número não-primo!');
