@@ -1,3 +1,5 @@
+//Part 1
+
 let info = {
     personagem: "Margarida",
     origem: "Pato Donald",
@@ -37,3 +39,15 @@ for (let key in info) {
         console.log(info[key] + ' e ' + infoTwo[key]);
     }
 }
+
+// Part 2
+
+function palindromeCheck(sentence) {
+    for (let index in sentence) {
+        if (sentence[index] != sentence[(sentence.length - 1) - index])
+            return false;
+        return true;
+    }
+}
+
+console.log(palindromeCheck('carro'));
