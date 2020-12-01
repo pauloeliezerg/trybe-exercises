@@ -24,7 +24,7 @@ Expected value on the console:
     origem
     nota
     recorrente
-- [ ] Make a new for / in, but now show all key values ​​for the object.
+- [x] Make a new for / in, but now show all key values ​​for the object.
 Expected value on the console:
     Margarida
     Pato Donald
