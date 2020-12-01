@@ -62,3 +62,14 @@ function integerSetOne(integers) {
 }
 
 console.log(integerSetOne([2, 3, 6, 7, 10, 1]));
+
+function integerSetTwo(integers) {
+    let smallestInteger = 0;
+    for (let index in integers) {
+        if (integers[index] <= smallestInteger)
+            smallestInteger = integers[index];
+    }
+    return smallestInteger;
+}
+
+console.log(integerSetTwo([2, 4, 6, 7, 10, 0, -3]));
