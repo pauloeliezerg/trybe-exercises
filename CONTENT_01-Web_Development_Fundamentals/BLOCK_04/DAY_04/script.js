@@ -104,3 +104,13 @@ function mostRepeatedNumberCheck(integers) {
 }
 
 console.log(mostRepeatedNumberCheck([2, 3, 2, 5, 8, 2, 3]));
+
+function gaussSum(integer) {
+    let sumValue = 0;
+    for (index = 1; index <= integer; index += 1){
+        sumValue += index;
+    }
+    return sumValue;
+}
+
+console.log(gaussSum(5));

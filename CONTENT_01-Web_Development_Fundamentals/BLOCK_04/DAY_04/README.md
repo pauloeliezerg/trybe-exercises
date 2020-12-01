@@ -41,5 +41,5 @@ Expected value on the console:
 - [x] Create a function that receives an array of integers and returns the index of the lowest value.
 - [x] Create a function that receives an array of names and returns the name with the most characters.
 - [x] Create a function that receives an array of integers and returns the most repeatable integer.
-- [ ] Create a function that receives an integer N and returns the sum of all numbers from 1 to N.
+- [x] Create a function that receives an integer N and returns the sum of all numbers from 1 to N.
 - [ ] Create a function that receives a word string and another ending string. Check that the ending string is the end of the word string. Consider that the ending string will always be less than the word string.
