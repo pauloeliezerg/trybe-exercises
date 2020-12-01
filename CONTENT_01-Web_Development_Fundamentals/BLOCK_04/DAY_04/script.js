@@ -85,3 +85,22 @@ function biggestNameCheck(names) {
 }
 
 console.log(biggestNameCheck(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+function mostRepeatedNumberCheck(integers) {
+    let mostRepeatedNumber = 0;
+    let repeatCount = [];
+    for (index in integers) {
+        for (repeatIndex in integers) {
+            if (integers[index] === integers[repeatIndex]) {
+                if (!repeatCount[index])
+                    repeatCount[index] = 0;
+                repeatCount[index] += 1;
+                if (repeatCount[index] && repeatCount[index] > repeatCount[index-1])
+                    mostRepeatedNumber = integers[index];
+            }
+        }
+    }
+    return mostRepeatedNumber;
+}
+
+console.log(mostRepeatedNumberCheck([2, 3, 2, 5, 8, 2, 3]));
