@@ -52,24 +52,24 @@ function palindromeCheck(sentence) {
 
 console.log(palindromeCheck('carro'));
 
-function integerSetOne(integers) {
-    let biggestInteger = 0;
+function highestNumberCheck(integers) {
+    let highestInteger = 0;
     for (let index in integers) {
-        if (integers[index] >= biggestInteger)
-            biggestInteger = integers[index];
+        if (integers[index] >= highestInteger)
+            highestInteger = integers[index];
     }
-    return biggestInteger;
+    return highestInteger;
 }
 
-console.log(integerSetOne([2, 3, 6, 7, 10, 1]));
+console.log(highestNumberCheck([2, 3, 6, 7, 10, 1]));
 
-function integerSetTwo(integers) {
-    let smallestInteger = 0;
+function lowestNumberCheck(integers) {
+    let lowestInteger = 0;
     for (let index in integers) {
-        if (integers[index] <= smallestInteger)
-            smallestInteger = integers[index];
+        if (integers[index] <= lowestInteger)
+            lowestInteger = integers[index];
     }
-    return smallestInteger;
+    return lowestInteger;
 }
 
-console.log(integerSetTwo([2, 4, 6, 7, 10, 0, -3]));
+console.log(lowestNumberCheck([2, 4, 6, 7, 10, 0, -3]));
