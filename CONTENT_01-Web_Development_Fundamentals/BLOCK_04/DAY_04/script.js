@@ -13,3 +13,7 @@ console.log(info);
 for (let key in info) {
     console.log(key);
 }
+
+for (let key in info) {
+    console.log(info[key]);
+}
