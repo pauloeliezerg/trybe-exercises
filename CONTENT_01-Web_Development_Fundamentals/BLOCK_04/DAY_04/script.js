@@ -95,7 +95,7 @@ function mostRepeatedNumberCheck(integers) {
                 if (!repeatCount[index])
                     repeatCount[index] = 0;
                 repeatCount[index] += 1;
-                if (repeatCount[index] && repeatCount[index] > repeatCount[index-1])
+                if (repeatCount[index] && repeatCount[index] > repeatCount[index-1]) //put a "=" after the > sign to return the latest most repeating number that appears in the array
                     mostRepeatedNumber = integers[index];
             }
         }
@@ -114,3 +114,17 @@ function gaussSum(integer) {
 }
 
 console.log(gaussSum(5));
+
+function stringEndingCheck(stringWord,stringEnding) {
+    if(stringEnding >= stringWord)
+        return console.log('Error')
+    let difference = stringWord.length - stringEnding.length;
+    for (let index = 0; index < stringEnding.length; index += 1) {
+        if (stringWord[difference + index] != stringEnding[index])
+            return false;
+    }
+    return true;
+}
+
+console.log(stringEndingCheck('trybe','be'));
+console.log(stringEndingCheck("joaofernando", "fernan"));
