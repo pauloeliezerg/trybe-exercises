@@ -51,3 +51,14 @@ function palindromeCheck(sentence) {
 }
 
 console.log(palindromeCheck('carro'));
+
+function integerSetOne(integers) {
+    let biggestInteger = 0;
+    for (let index in integers) {
+        if (integers[index] >= biggestInteger)
+            biggestInteger = integers[index];
+    }
+    return biggestInteger;
+}
+
+console.log(integerSetOne([2, 3, 6, 7, 10, 1]));

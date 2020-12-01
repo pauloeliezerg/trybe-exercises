@@ -37,8 +37,8 @@ Expected value on the console:
     Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
     Ambos recorrentes // Atenção para essa última linha!
 - [x] Create a function that takes a string and returns true if it is a palindrome, or false if it is not.
-- [ ] Create a function that receives an array of integers and returns the index of the highest value.
-- [ ] Create a function that receives an array of integers and returns the index of the lowest value.
+- [x] Create a function that receives an array of integers and returns the index of the highest value.
+- [x] Create a function that receives an array of integers and returns the index of the lowest value.
 - [ ] Create a function that receives an array of names and returns the name with the most characters.
 - [ ] Create a function that receives an array of integers and returns the most repeatable integer.
 - [ ] Create a function that receives an integer N and returns the sum of all numbers from 1 to N.
