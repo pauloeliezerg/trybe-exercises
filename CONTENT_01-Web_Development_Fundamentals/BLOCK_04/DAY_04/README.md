@@ -30,7 +30,7 @@ Expected value on the console:
     Pato Donald
     Namorada do personagem principal nos quadrinhos do Pato Donald
     Sim
-- [ ] Now, define a second object with the same structure (the same) as the first and the following values: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics # 178", "O último MacPatinhas", "Sim".
+- [x] Now, define a second object with the same structure (the same) as the first and the following values: "Tio Patinhas", "Christmas on Bear Mountain, Dell's Four Color Comics # 178", "O último MacPatinhas", "Sim".
 Expected value on the console:
     Margarida e Tio Patinhas
     Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
