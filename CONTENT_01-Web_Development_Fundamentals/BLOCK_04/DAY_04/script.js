@@ -73,3 +73,15 @@ function lowestNumberCheck(integers) {
 }
 
 console.log(lowestNumberCheck([2, 4, 6, 7, 10, 0, -3]));
+
+function biggestNameCheck(names) {
+    let biggestName = '';
+    for (let index in names) {
+        if (names[index].length >= biggestName.length) {
+            biggestName = names[index];
+        }
+    }
+    return biggestName;
+}
+
+console.log(biggestNameCheck(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));

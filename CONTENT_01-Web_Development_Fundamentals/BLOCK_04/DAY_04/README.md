@@ -39,7 +39,7 @@ Expected value on the console:
 - [x] Create a function that takes a string and returns true if it is a palindrome, or false if it is not.
 - [x] Create a function that receives an array of integers and returns the index of the highest value.
 - [x] Create a function that receives an array of integers and returns the index of the lowest value.
-- [ ] Create a function that receives an array of names and returns the name with the most characters.
+- [x] Create a function that receives an array of names and returns the name with the most characters.
 - [ ] Create a function that receives an array of integers and returns the most repeatable integer.
 - [ ] Create a function that receives an integer N and returns the sum of all numbers from 1 to N.
 - [ ] Create a function that receives a word string and another ending string. Check that the ending string is the end of the word string. Consider that the ending string will always be less than the word string.
