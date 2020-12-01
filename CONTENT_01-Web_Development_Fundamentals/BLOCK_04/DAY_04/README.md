@@ -18,7 +18,7 @@ Expected value on the console:
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
     recorrente: 'Sim'
     };
-- [ ] Make a for / in that shows all the keys of the object.
+- [x] Make a for / in that shows all the keys of the object.
 Expected value on the console:
     personagem
     origem
