@@ -18,4 +18,3 @@
 ## Part III
 	
 - [x] Put all the CSS created so far in the previous exercises in an external file.
-

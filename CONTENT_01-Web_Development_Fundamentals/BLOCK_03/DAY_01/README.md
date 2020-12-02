@@ -11,4 +11,3 @@
 - [x] 1 - Create a paragraph for each person on your list.
 - [x] 2 - Create a link between your list and the paragraphs of people.
 - [x] 3 - Create a link to the Google page.
-
