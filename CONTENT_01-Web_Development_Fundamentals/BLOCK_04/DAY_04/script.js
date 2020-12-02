@@ -166,3 +166,30 @@ function convertRomanToArabic(romanFigure) {
 
 console.log(convertRomanToArabic('IX'));
 console.log(convertRomanToArabic('XI'));
+
+function add(num1, num2) {
+    let num1ToString = num1.toString().split("").reverse();
+    let num2ToString = num2.toString().split("").reverse();
+    let biggestLength = 0;
+    let sum = [];
+    if (num1ToString.length > num2ToString.length) {
+        biggestLength = num1ToString.length;
+    } else {
+        biggestLength = num2ToString.length;
+    }
+
+    for (let index = 0; index < biggestLength; index += 1) {
+        if ( num1ToString[index] === undefined ) {
+            num1ToString[index] = 0;
+        } else if ( num2ToString[index] === undefined ) {
+            num2ToString[index] = 0;
+        }
+    }
+    for (let index = 0; index < biggestLength; index += 1) {
+       sum[index] = parseInt(num1ToString[index]) + parseInt(num2ToString[index]);
+    }
+    return parseInt(sum.reverse().join(""));
+ }
+
+ console.log(add(16,18))
+ 
