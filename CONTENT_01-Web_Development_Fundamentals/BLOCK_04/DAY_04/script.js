@@ -127,4 +127,42 @@ function stringEndingCheck(stringWord,stringEnding) {
 }
 
 console.log(stringEndingCheck('trybe','be'));
-console.log(stringEndingCheck("joaofernando", "fernan"));
+console.log(stringEndingCheck('joaofernando', 'fernan'));
+
+//Bonus
+
+function convertRomanToArabic(romanFigure) {
+    let romanFigureSet = {
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000
+    };
+    let numberValue = 0;
+    let mainValueIndex = 0;
+    
+    for (let index = 0; index < romanFigure.length; index += 1) {
+        let aux = romanFigure[index]; //readability
+        
+        if (!index || index && romanFigureSet[aux] > romanFigureSet[romanFigure[index-1]]) {
+            numberValue = romanFigureSet[aux];
+            mainValueIndex = index;
+        }
+    }
+    for (let incDecIndex = 0; incDecIndex < romanFigure.length; incDecIndex += 1) {
+        let incDecAux = romanFigure[incDecIndex];
+        if (incDecIndex < mainValueIndex) {
+            numberValue -= romanFigureSet[incDecAux];
+        }
+        if (incDecIndex > mainValueIndex) {
+            numberValue += romanFigureSet[incDecAux];
+        }
+    }
+    return numberValue;
+}
+
+console.log(convertRomanToArabic('IX'));
+console.log(convertRomanToArabic('XI'));
