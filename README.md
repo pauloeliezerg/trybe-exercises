@@ -7,7 +7,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Unix, Shell & Git
 
-- [ ] _Unix & Shell_
+- [x] _Unix & Shell_
 - [ ] _Git_
 - [ ] _Git and Github commands_
 
