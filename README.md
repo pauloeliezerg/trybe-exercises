@@ -9,7 +9,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 - [x] _Unix & Shell_
 - [x] _Git_
-- [ ] _Git and Github commands_
+- [x] _Git and Github commands_
 
 ### HTML & CSS - Intro
 
