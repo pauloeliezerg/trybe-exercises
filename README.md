@@ -3,7 +3,7 @@
 This repository contains all the learning activities developed by _[Paulo Eliezer](https://www.linkedin.com/in/pauloeliezerg/)_ while studying at [Trybe](https://www.betrybe.com/) 🚀
 _"Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where people only pay when they get a good job."_
 
-## Web Development Fundamentals
+## :hourglass_flowing_sand: Web Development Fundamentals
 
 ### Unix, Shell & Git
 
@@ -13,7 +13,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### HTML & CSS - Intro
 
-- [ ] _Page Structure_
+- [x] _Page Structure_
 - [ ] _First Steps in CSS_
 - [ ] _Selectors and positioning_
 - [ ] _Semantic HTML_
@@ -55,7 +55,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [ ] _Array methods - reduce_
 - [ ] _Live Coding_
 
-## Front-end
+## :hourglass_flowing_sand: Front-end
 
 ### Front-end and async JavaScript - Intro
 
@@ -105,7 +105,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [ ] _Context API_
 - [ ] _Customized Hooks_
 
-## Back-end
+## :hourglass_flowing_sand: Back-end
 
 ### Docker - Containers
 
@@ -177,7 +177,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 - [ ] _Object Oriented APIs and NoSQL - OOP and ODMs_
 
-## Computer-Science
+## :hourglass_flowing_sand: Computer-Science
 
 ### Introduction to Python
 
