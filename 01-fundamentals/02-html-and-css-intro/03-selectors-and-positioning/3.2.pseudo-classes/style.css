@@ -21,3 +21,23 @@ div:nth-of-type(4) {
 div:nth-of-type(5) {
   background-color: lightblue;
 }
+
+h3:nth-of-type(1) {
+  color: purple;
+}
+
+h3:nth-of-type(2) {
+  color: green;
+}
+
+h3:nth-of-type(3) {
+  font-size: 20px;
+}
+
+h3:nth-of-type(4) {
+  font-family: monospace;
+}
+
+h3:nth-of-type(5) {
+  font-style: italic;
+}
