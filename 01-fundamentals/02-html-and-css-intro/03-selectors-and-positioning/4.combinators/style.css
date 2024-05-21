@@ -1,0 +1,56 @@
+ol > li {
+  background-color: yellow;
+}
+
+ol > li:nth-of-type(even) {
+  color: green;
+}
+
+ol > li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  color: red;
+}
+
+h1 em,
+h2 em,
+h3 em {
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+ul:nth-of-type(1) li:not(:nth-of-type(n + 4)) {
+  color: blue;
+}
+
+a[href*="stackoverflow"] {
+  color: orange;
+}
+
+a[href*="w3schools"] {
+  color: green;
+}
+
+a[href*="mozilla"] {
+  color: black;
+}
+
+a[href*="devdocs"] {
+  color: yellow;
+}
+
+a[href*="trybe"] {
+  color: green;
+}
