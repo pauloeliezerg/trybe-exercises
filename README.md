@@ -16,7 +16,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _Page Structure_
 - [x] _First Steps in CSS_
 - [x] _Selectors and positioning_
-- [ ] _Semantic HTML_
+- [x] _Semantic HTML_
 
 ### JavaScript - Intro
 
