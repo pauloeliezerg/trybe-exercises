@@ -9,3 +9,16 @@ ol > li:nth-of-type(even) {
 ol > li:nth-of-type(odd) {
   text-transform: uppercase;
 }
+
+h1,
+h2,
+h3 {
+  color: red;
+}
+
+h1 em,
+h2 em,
+h3 em {
+  border: 1px solid black;
+  font-size: 40px;
+}
