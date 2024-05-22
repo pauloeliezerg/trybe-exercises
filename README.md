@@ -20,7 +20,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### JavaScript - Intro
 
-- [ ] _First Steps in JavaScript_
+- [x] _First Steps in JavaScript_
 - [ ] _Array and loop_
 - [ ] _Functions_
 - [ ] _Objects_
