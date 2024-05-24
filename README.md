@@ -24,7 +24,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _Array and loop_
 - [x] _Functions_
 - [x] _Objects_
-- [ ] _JSON_
+- [x] _JSON_
 
 ### Javascript - DOM, events and Web Storage
 
