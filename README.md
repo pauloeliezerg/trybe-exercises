@@ -28,7 +28,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Javascript - DOM, events and Web Storage
 
-- [ ] _DOM and selectors_
+- [x] _DOM and selectors_
 - [ ] _JavaScript - Working with elements_
 - [ ] _JavaScript - Events_
 - [ ] _JavaScript - Web Storage_
