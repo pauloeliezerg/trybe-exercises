@@ -106,7 +106,6 @@ const generateFruitDict = (array) => {
   const fruitDict = {};
 
   for (let indexArray = 0; indexArray < array.length; indexArray += 1) {
-    // console.log(array[indexArray]);
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket += 1) {
       if (basket[indexBasket] === array[indexArray])
         fruitDict[array[indexArray]]
