@@ -5,10 +5,20 @@ const input = document.getElementById("input");
 const myWebpage = document.getElementById("my-spotrybefy");
 
 // 1. copy this file and edit only it
-// 1.1. note that one of the boxes is slightly above the others. Why does this occur?
+// 1.1. note that one of the boxes is slightly above the others; why does this occur?
 
 // 2. create a function that adds the 'tech' class to the `li` element when it is clicked
 // 2.1. there must be only one element with the class 'tech'; how is it possible to do this? tip: remember the `.classList.remove` method
+const handleTech = (event) => {
+  const focusedTech = document.querySelector(".tech");
+
+  focusedTech.classList.remove("tech");
+  event.target.classList.add("tech");
+};
+
+firstLi.addEventListener("click", handleTech);
+secondLi.addEventListener("click", handleTech);
+thirdLi.addEventListener("click", handleTech);
 
 // 3. create a function that, when typing in the text box, changes the text of the element with class 'tech'
 
