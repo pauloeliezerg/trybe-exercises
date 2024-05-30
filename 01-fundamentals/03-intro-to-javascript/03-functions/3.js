@@ -1,4 +1,4 @@
-//
+// addCustomers function (array of strings)
 const trybeBankCustomers = ["Oliva", "Nat", "Gus"];
 
 function addCustomers(customers, newCustomers) {
@@ -10,5 +10,3 @@ function addCustomers(customers, newCustomers) {
 
   return "Pessoas adicionada com sucesso!";
 }
-
-console.log(addCustomers(trybeBankCustomers, ["Lorem", "Ipsum"]));
