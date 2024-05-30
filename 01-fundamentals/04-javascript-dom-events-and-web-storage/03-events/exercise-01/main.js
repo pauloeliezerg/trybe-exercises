@@ -29,6 +29,10 @@ input.addEventListener("input", (event) => {
 });
 
 // 4. create a function that, when double clicking on 'My Spotrybefy top 3', redirect to some page
+myWebpage.addEventListener("dblclick", () =>
+  window.location.replace("http://localhost"),
+);
+
 // 4.1. how about redirecting it to your portfolio; tip: remember the `window.location.replace` and `window.open` methods
 
 // 5. create a function that, when hovering over 'My Spotrybefy top 3', changes its color
