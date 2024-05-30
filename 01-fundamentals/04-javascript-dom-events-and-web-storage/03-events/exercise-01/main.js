@@ -14,6 +14,7 @@ const handleTech = (event) => {
 
   focusedTech.classList.remove("tech");
   event.target.classList.add("tech");
+  input.value = "";
 };
 
 firstLi.addEventListener("click", handleTech);
@@ -21,6 +22,11 @@ secondLi.addEventListener("click", handleTech);
 thirdLi.addEventListener("click", handleTech);
 
 // 3. create a function that, when typing in the text box, changes the text of the element with class 'tech'
+input.addEventListener("input", (event) => {
+  const focusedTech = document.querySelector(".tech");
+
+  focusedTech.innerText = event.target.value;
+});
 
 // 4. create a function that, when double clicking on 'My Spotrybefy top 3', redirect to some page
 // 4.1. how about redirecting it to your portfolio; tip: remember the `window.location.replace` and `window.open` methods
