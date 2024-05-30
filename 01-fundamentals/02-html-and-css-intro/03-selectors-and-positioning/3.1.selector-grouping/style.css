@@ -1,16 +1,20 @@
+/* 3. in this .css file, add the styles so that the text of the ‘h1’ and ‘p’ tags are centered */
 h1,
 p {
   text-align: center;
 }
 
+/* 4. the background color of your list changes when the cursor is over the item */
 ol:hover {
   background-color: teal;
 }
 
+/* 5. the font of the item changes when it is clicked */
 li:active {
   font-family: monospace;
 }
 
+/* 7. in ‘style.css’, add the property ‘list-style: none’ for both lists */
 ol,
 ul {
   list-style: none;

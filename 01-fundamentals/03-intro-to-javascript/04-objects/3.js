@@ -26,10 +26,10 @@ const school = {
   ],
 };
 
-// exercise 1
+// 1. create a function that obtains the value of the key according to its position in the array; this function must have two parameters: the object and the position in the array
 const retrieveKeys = (object, index) => Object.values(object)[0][index];
 
-// exercise 2
+// 2. create a function that returns the sum of the total number of students across all courses
 const getTotalStudentNumber = (object) => {
   let sum = 0;
   let coursesArray = Object.values(object)[0];
@@ -41,7 +41,7 @@ const getTotalStudentNumber = (object) => {
   return sum;
 };
 
-// exercise 3
+// 3. create a function that checks whether a given key exists in all elements of the lessons array; the return must be a boolean (true or false); this function must have two parameters: the object and the key name
 const verifyKey = (object, key) => {
   let coursesArray = Object.values(object)[0];
 
@@ -52,7 +52,7 @@ const verifyKey = (object, key) => {
   return true;
 };
 
-// exercise 4
+// 4. create a function to change the shift to night in the python course; this function must have three parameters: the database to be modified, the course name and the new key value
 const changeShift = (database, course, shift) => {
   let coursesArray = Object.values(database)[0];
 

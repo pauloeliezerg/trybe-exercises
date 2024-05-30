@@ -1,7 +1,8 @@
+/* 1. place all CSS for the style tag in an external file */
 h1 {
   color: seagreen;
   font-size: 65px;
-  font-family: sans-serif, Helvetica; 
+  font-family: sans-serif, Helvetica;
 }
 
 .cor-de-fundo {

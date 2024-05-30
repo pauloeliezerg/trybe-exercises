@@ -101,9 +101,10 @@ const basket = [
   "Uva",
 ];
 
-// exercise 1
+// using the fruit array called basket, create an object that contains the name of the fruit as a key and the number of times it appears in the array as a value; then, print this result on the screen with a message in the following format: Your basket has: x Melancias, x Abacates...
 const generateFruitDict = (array) => {
   const fruitDict = {};
+  let fruitString = "Your basket has: ";
 
   for (let indexArray = 0; indexArray < array.length; indexArray += 1) {
     for (let indexBasket = 0; indexBasket < basket.length; indexBasket += 1) {
@@ -114,5 +115,11 @@ const generateFruitDict = (array) => {
     }
   }
 
-  return fruitDict;
+  for (let index = 0; index < Object.keys(fruitDict).length; index += 1) {
+    fruitString += `${index ? ", " : ""}${Object.values(fruitDict)[index]} ${
+      Object.keys(fruitDict)[index]
+    }`;
+  }
+
+  return fruitString;
 };
