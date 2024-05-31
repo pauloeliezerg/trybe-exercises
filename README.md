@@ -30,7 +30,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 - [x] _DOM and selectors_
 - [x] _JavaScript - Working with elements_
-- [ ] _JavaScript - Events_
+- [x] _JavaScript - Events_
 - [ ] _JavaScript - Web Storage_
 
 ### HTML and CSS - Forms, Flexbox and Responsive
