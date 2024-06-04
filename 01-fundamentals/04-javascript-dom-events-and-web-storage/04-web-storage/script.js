@@ -71,6 +71,10 @@ window.onload = () => {
   let lineHeightButtons = document.querySelectorAll("#line-height>button");
   for (let index = 0; index < lineHeightButtons.length; index += 1) {
     lineHeightButtons[index].addEventListener("click", (event) => {
+      localStorage.setItem(
+        "lineHeight",
+        JSON.stringify(event.target.innerHTML),
+      );
       setLineHeight(event.target.innerHTML);
     });
   }
@@ -88,8 +92,10 @@ window.onload = () => {
   );
   const storedFontColor = JSON.parse(localStorage.getItem("fontColor"));
   const storedFontSize = JSON.parse(localStorage.getItem("fontSize"));
+  const storedLineHeight = JSON.parse(localStorage.getItem("lineHeight"));
 
   setBackgroundColor(storedBackgroundColor);
   setFontColor(storedFontColor);
   setFontSize(storedFontSize);
+  setLineHeight(storedLineHeight);
 };
