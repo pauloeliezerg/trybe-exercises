@@ -71,6 +71,7 @@ window.onload = () => {
   let lineHeightButtons = document.querySelectorAll("#line-height>button");
   for (let index = 0; index < lineHeightButtons.length; index += 1) {
     lineHeightButtons[index].addEventListener("click", (event) => {
+      // 4. store the spacing between lines of text chosen by the user in the browser
       localStorage.setItem(
         "lineHeight",
         JSON.stringify(event.target.innerHTML),
@@ -83,19 +84,27 @@ window.onload = () => {
   let fontFamilyButtons = document.querySelectorAll("#font-family>button");
   for (let index = 0; index < fontFamilyButtons.length; index += 1) {
     fontFamilyButtons[index].addEventListener("click", (event) => {
+      // 5. store the font type (Font family) chosen by the user in the browser
+      localStorage.setItem(
+        "fontFamily",
+        JSON.stringify(event.target.innerHTML),
+      );
       setFontFamily(event.target.innerHTML);
     });
   }
 
+  // 6. when returning to the page, the preferences that were saved should be kept on the screen
   const storedBackgroundColor = JSON.parse(
     localStorage.getItem("backgroundColor"),
   );
   const storedFontColor = JSON.parse(localStorage.getItem("fontColor"));
   const storedFontSize = JSON.parse(localStorage.getItem("fontSize"));
   const storedLineHeight = JSON.parse(localStorage.getItem("lineHeight"));
+  const storedFontFamily = JSON.parse(localStorage.getItem("fontFamily"));
 
   setBackgroundColor(storedBackgroundColor);
   setFontColor(storedFontColor);
   setFontSize(storedFontSize);
   setLineHeight(storedLineHeight);
+  setFontFamily(storedFontFamily);
 };
