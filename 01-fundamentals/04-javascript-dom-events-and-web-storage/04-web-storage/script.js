@@ -51,7 +51,7 @@ window.onload = () => {
   let fontColorButtons = document.querySelectorAll("#font-color>button");
   for (let index = 0; index < fontColorButtons.length; index += 1) {
     fontColorButtons[index].addEventListener("click", (event) => {
-      // 2. store the text color chosen by the user in the browser.
+      // 2. store the text color chosen by the user in the browser
       localStorage.setItem("fontColor", JSON.stringify(event.target.innerHTML));
       setFontColor(event.target.innerHTML);
     });
@@ -61,6 +61,8 @@ window.onload = () => {
   let fontSizeButtons = document.querySelectorAll("#font-size>button");
   for (let index = 0; index < fontSizeButtons.length; index += 1) {
     fontSizeButtons[index].addEventListener("click", (event) => {
+      // 3. store the font size chosen by the user in the browser
+      localStorage.setItem("fontSize", JSON.stringify(event.target.innerHTML));
       setFontSize(event.target.innerHTML);
     });
   }
@@ -84,8 +86,10 @@ window.onload = () => {
   const storedBackgroundColor = JSON.parse(
     localStorage.getItem("backgroundColor"),
   );
-  const storedFontColor = JSON.parse(localStorage.getItem("backgroundColor"));
+  const storedFontColor = JSON.parse(localStorage.getItem("fontColor"));
+  const storedFontSize = JSON.parse(localStorage.getItem("fontSize"));
 
   setBackgroundColor(storedBackgroundColor);
   setFontColor(storedFontColor);
+  setFontSize(storedFontSize);
 };
