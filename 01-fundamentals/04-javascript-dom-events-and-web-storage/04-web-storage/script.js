@@ -1,7 +1,8 @@
 window.onload = () => {
-  const setBackgroundColor = (color) => {
+  const setBackgroundColor = () => {
     let content = document.querySelector(".content");
-    content.style.backgroundColor = color;
+    storedColor = JSON.parse(localStorage.getItem("backgroundColor"));
+    content.style.backgroundColor = storedColor;
   };
 
   const setFontColor = (color) => {
@@ -38,7 +39,12 @@ window.onload = () => {
   );
   for (let index = 0; index < backgroundColorButtons.length; index += 1) {
     backgroundColorButtons[index].addEventListener("click", (event) => {
-      setBackgroundColor(event.target.innerHTML);
+      // 1. store the background color chosen by the user in the browser
+      localStorage.setItem(
+        "backgroundColor",
+        JSON.stringify(event.target.innerHTML),
+      );
+      setBackgroundColor();
     });
   }
 
@@ -73,4 +79,6 @@ window.onload = () => {
       setFontFamily(event.target.innerHTML);
     });
   }
+
+  setBackgroundColor();
 };
