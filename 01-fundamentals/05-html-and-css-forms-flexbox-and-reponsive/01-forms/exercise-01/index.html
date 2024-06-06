@@ -6,36 +6,41 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- 1. add input fields for email and password -->
-    <!-- 4. add the “Enter your email” and “Enter your password” placeholders to the email and password fields -->
-    <!-- 5. add the required attribute to the email and password fields -->
-    <!-- 6. add the autocomplete="off" attribute to the email field -->
-    <!-- 7. add the autofocus attribute to the email field -->
-    <label for="email">email</label>
-    <input
-      type="email"
-      name="email"
-      id=""
-      placeholder="Enter your email"
-      required
-      autocomplete="off"
-      autofocus
-    />
-    <br />
-    <label for="password">password</label>
-    <input
-      type="password"
-      name="password"
-      id=""
-      placeholder="Enter your password"
-      required
-    />
-    <br />
-    <!-- 2. add a checkbox with the text “Remind me” -->
-    <label for="remind-me">Remind me</label>
-    <input type="checkbox" name="remind-me" id="" />
-    <br />
-    <!-- 3. add a button with the text “Sign in” -->
-    <input type="button" value="Sign in" />
+    <form action="GET">
+      <!-- 1. add input fields for email and password -->
+      <!-- 4. add the “Enter your email” and “Enter your password” placeholders to the email and password fields -->
+      <!-- 5. add the required attribute to the email and password fields -->
+      <!-- 6. add the autocomplete="off" attribute to the email field -->
+      <!-- 7. add the autofocus attribute to the email field -->
+      <label for="email">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+          autocomplete="off"
+          autofocus
+        />email
+      </label>
+      <br />
+      <label for="password">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />password
+      </label>
+      <br />
+      <!-- 2. add a checkbox with the text “Remind me” -->
+      <label for="remind-me">
+        <input type="checkbox" name="remind-me" id="remind-me" />Remind me
+      </label>
+      <br />
+      <!-- 3. add a button with the text “Sign in” -->
+      <button type="submit">Sign in</button>
+    </form>
   </body>
 </html>
