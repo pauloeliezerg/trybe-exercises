@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário - TrybeTravel</title>
+    <!-- 1. add the chosen framework to the form -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1 id="title">Formulário Trybe Travel</h1>
+    <!-- 2. add style to the form -->
+    <h1 id="title" class="text-center">Formulário Trybe Travel</h1>
 
-    <form id="main-form">
+    <form id="main-form" class="container">
       <fieldset>
-        <label for="fullName">Nome Completo:</label>
+        <label for="fullName" class="form-label">Nome Completo:</label>
         <input
           type="text"
           id="fullName"
@@ -19,6 +27,7 @@
           maxlength="40"
           minlength="10"
           required
+          class="form-control"
         />
         <label for="email" class="form-label">Endereço de E-mail:</label>
         <input
@@ -29,9 +38,10 @@
           maxlength="50"
           minlength="10"
           required
+          class="form-control"
         />
 
-        <label for="destination1">Cidade</label>
+        <label for="destination1" class="form-check-label">Cidade</label>
         <input
           type="radio"
           id="destination1"
@@ -39,6 +49,7 @@
           name="destinations"
           value="Cidade"
           required
+          class="form-check-input"
         />
         <label for="destination2">Campo</label>
         <input
@@ -48,6 +59,7 @@
           name="destinations"
           value="Campo"
           required
+          class="form-check-input"
         />
         <label for="destination3">Praia</label>
         <input
@@ -57,6 +69,7 @@
           name="destinations"
           value="Praia"
           required
+          class="form-check-input"
         />
         <label for="destination4">Montanhas</label>
         <input
@@ -66,8 +79,9 @@
           name="destinations"
           value="Montanhas"
           required
+          class="form-check-input"
         />
-        <label for="question">
+        <label for="question" class="form-label">
           Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
           TrybeTravel
         </label>
@@ -79,25 +93,41 @@
           rows="10"
           placeholder="Digite sua resposta vencedora aqui"
           maxlength="500"
+          class="form-control"
         >
         </textarea>
-        <label for="date">Qual a melhor data para realizar sua viagem?</label>
-        <input type="date" id="date" />
+        <label for="date" class="form-label"
+          >Qual a melhor data para realizar sua viagem?</label
+        >
+        <input type="date" id="date" class="form-control" />
         <br />
-        <label for="promo"
+        <label for="promo" class="form-check-label"
           >Gostaria de receber outras incríveis oportunidades oferecidas pela
           Trybe.
         </label>
-        <input type="checkbox" name="promo" id="promo" />
+        <input
+          type="checkbox"
+          name="promo"
+          id="promo"
+          class="form-check-input"
+        />
         <br />
-        <label for="agreement"
+        <label for="agreement" class="form-check-label"
           >Concordo que imagens de minhas férias poderão ser usadas na
           divulgação de concursos futuros.
         </label>
-        <input type="checkbox" name="agreement" id="agreement" required />
+        <input
+          type="checkbox"
+          name="agreement"
+          id="agreement"
+          required
+          class="form-check-input"
+        />
       </fieldset>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
-      <button type="reset" id="clear-btn">Limpar</button>
+      <button type="submit" id="submit-btn" disabled class="btn btn-primary">
+        Enviar
+      </button>
+      <button type="reset" id="clear-btn" class="btn btn-danger">Limpar</button>
     </form>
   </body>
 </html>
