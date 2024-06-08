@@ -54,10 +54,12 @@ body {
 }
 
 /* 7. add a property to your movie container so that it has a base size of 700px. Also add a base of 16% to your card's child elements */
+/* 8. in the movie container, apply a property to expand it, this property must have the value 10 */
 .movie-container {
   display: flex;
   flex-basis: 700px;
   flex-direction: column;
+  flex-grow: 10;
 }
 
 .movie-container h2 {
@@ -82,7 +84,7 @@ body {
   margin: 10px;
 }
 
-/* 6. on aside elements, centralize and expand your content */
+/* 6. in aside elements, centralize and expand your content */
 .aside-container {
   display: flex;
   flex-basis: 350px;
