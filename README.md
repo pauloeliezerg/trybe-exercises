@@ -38,7 +38,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _HTML & CSS - Forms_
 - [x] _JavaScript Libraries and CSS Frameworks_
 - [x] _CSS Flexbox - Part 1_
-- [ ] _CSS Flexbox - Part 2_
+- [x] _CSS Flexbox - Part 2_
 - [ ] _Responsiveness_
 
 ### ES6 Javascript and Unitary Tests - Intro
