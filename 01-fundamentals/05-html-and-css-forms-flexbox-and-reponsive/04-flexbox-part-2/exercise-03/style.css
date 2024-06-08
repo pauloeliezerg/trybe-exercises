@@ -15,15 +15,18 @@ body {
 }
 
 /* 1. add a flex-basis property to logo and menu containers */
+/* 2. add a Flexbox property that modifies the order in which the logo and menu items appear on the screen. */
 .logo-container {
   display: flex;
   justify-content: center;
   flex-basis: 268px;
+  order: 1;
 }
 
 .menu-container {
   display: flex;
   flex-basis: 500px;
+  order: 2;
 }
 
 .menu-container ul {
