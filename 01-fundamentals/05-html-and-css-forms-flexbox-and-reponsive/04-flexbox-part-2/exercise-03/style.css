@@ -53,8 +53,10 @@ body {
   flex-wrap: wrap;
 }
 
+/* 7. add a property to your movie container so that it has a base size of 700px. Also add a base of 16% to your card's child elements */
 .movie-container {
   display: flex;
+  flex-basis: 700px;
   flex-direction: column;
 }
 
@@ -74,6 +76,7 @@ body {
   background-color: #5c687c;
   border: black solid 1px;
   display: flex;
+  flex-basis: 16%;
   height: 150px;
   justify-content: center;
   margin: 10px;
