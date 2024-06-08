@@ -24,7 +24,9 @@ body {
 }
 
 /* 3. add a Flexbox property that makes the menu container grow when space is available */
+/* 4. use the align-self property on the correct element so that the page header has the text centered vertically */
 .menu-container {
+  align-self: center;
   display: flex;
   flex-basis: 500px;
   flex-grow: 1;
