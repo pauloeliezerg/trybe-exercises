@@ -14,13 +14,16 @@ body {
   display: flex;
 }
 
+/* 1. add a flex-basis property to logo and menu containers */
 .logo-container {
   display: flex;
   justify-content: center;
+  flex-basis: 268px;
 }
 
 .menu-container {
   display: flex;
+  flex-basis: 500px;
 }
 
 .menu-container ul {
