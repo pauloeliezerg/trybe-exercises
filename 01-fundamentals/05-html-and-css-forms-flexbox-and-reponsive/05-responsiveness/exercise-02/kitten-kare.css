@@ -1,3 +1,17 @@
+@media print {
+  id header {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
