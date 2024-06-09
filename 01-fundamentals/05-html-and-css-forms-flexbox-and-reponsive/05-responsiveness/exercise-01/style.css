@@ -25,6 +25,13 @@
   }
 }
 
+/* 4. without changing the CSS already written, make the text inside the element that contains the trick class appear only when the screen is less than 500px wide */
+@media screen and (min-width: 500px) {
+  .trick {
+    display: none;
+  }
+}
+
 body {
   align-items: center;
   color: #525252;
