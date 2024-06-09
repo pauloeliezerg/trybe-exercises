@@ -1,14 +1,14 @@
 @media print {
-  id header {
+  /* 1. the id header, navigation and footer elements should disappear */
+  #header,
+  #navigation,
+  #footer {
     display: none;
   }
 
-  nav {
-    display: none;
-  }
-
-  footer {
-    display: none;
+  /* 2. the id='aside' element must be shown below the main content */
+  #content-container {
+    flex-direction: column;
   }
 }
 
