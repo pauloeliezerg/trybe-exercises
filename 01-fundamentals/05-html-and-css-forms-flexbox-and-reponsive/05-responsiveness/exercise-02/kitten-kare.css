@@ -1,3 +1,4 @@
+/* printable layout version */
 @media print {
   /* 1. the id header, navigation and footer elements should disappear */
   #header,
@@ -9,6 +10,14 @@
   /* 2. the id='aside' element must be shown below the main content */
   #content-container {
     flex-direction: column;
+  }
+}
+
+/* layout version for small screens */
+@media screen and (max-width: 768px) {
+  /* 3. the id='aside' element should disappear */
+  #aside {
+    display: none;
   }
 }
 
