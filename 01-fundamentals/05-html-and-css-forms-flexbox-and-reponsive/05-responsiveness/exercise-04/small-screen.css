@@ -41,8 +41,10 @@ main {
 section {
 }
 
+/* 3. increase the spacing between figures */
 figure {
-  margin: 0;
+  margin: 0 0 25px 0;
+  padding: 10px;
 }
 
 figcaption {
