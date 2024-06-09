@@ -20,10 +20,15 @@ body {
 article {
 }
 
+/* 2. decrease the font size of the h1 and h2 elements; set a margin for these elements */
 h1 {
+  font-size: xx-large;
+  margin: auto;
 }
 
 h2 {
+  font-size: x-large;
+  margin: auto;
 }
 
 img {
