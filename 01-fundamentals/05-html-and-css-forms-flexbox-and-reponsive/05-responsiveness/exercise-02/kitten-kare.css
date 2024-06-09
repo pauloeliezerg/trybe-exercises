@@ -19,6 +19,11 @@
   #aside {
     display: none;
   }
+
+  /* 4. images must not exceed the width of the screen */
+  img {
+    max-width: 100%;
+  }
 }
 
 * {
