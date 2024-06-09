@@ -29,6 +29,17 @@
   #navigation > ul {
     flex-direction: column;
   }
+
+  /* 6. the id header element must be fixed, so that it always appears at the top of the screen, even after the user scrolls the page */
+  #header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+  }
+
+  #navigation {
+    padding-top: 75px;
+  }
 }
 
 * {
