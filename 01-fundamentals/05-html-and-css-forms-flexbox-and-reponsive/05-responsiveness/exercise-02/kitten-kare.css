@@ -24,6 +24,11 @@
   img {
     max-width: 100%;
   }
+
+  /* 5. items within the navigation element must each appear on their own line */
+  #navigation > ul {
+    flex-direction: column;
+  }
 }
 
 * {
