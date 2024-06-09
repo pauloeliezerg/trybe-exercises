@@ -13,6 +13,8 @@ html {
 }
 
 body {
+  /* 1. increase the font size */
+  font-size: large;
 }
 
 article {
