@@ -4,6 +4,12 @@
     display: block;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  /* 2. the second div can only appear if the width is between 600px and 1000px */
+  .card:nth-of-type(2) {
+    display: block;
+  }
+}
 
 body {
   align-items: center;
