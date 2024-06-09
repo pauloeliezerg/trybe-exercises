@@ -1,3 +1,10 @@
+@media screen and (min-width: 500px) {
+  /* 1. the first div can only appear if our screen has a minimum width of 500px */
+  .card:nth-of-type(1) {
+    display: block;
+  }
+}
+
 body {
   align-items: center;
   color: #525252;
