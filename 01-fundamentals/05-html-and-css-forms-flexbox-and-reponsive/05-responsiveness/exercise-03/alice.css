@@ -7,3 +7,46 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.container {
+  display: flex;
+}
+
+p {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #282828;
+    font-family: sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #282828;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    background-color: #282828;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+}
