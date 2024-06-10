@@ -112,8 +112,16 @@ const findPersonByName = (name) => {
   }
 };
 
+// 2. the findPersonByPosition() function receives a position (from the array) per parameter and returns a string with the person's name and email. Client: João da Silva. email: joao.silva@gmail.com.
+// if the findPersonByPosition() function does not find a person by position, throw an exception with the message 'Invalid position, try again'
 const findPersonByPosition = (position) => {
-  // seu código aqui
+  try {
+    const client = clients[position];
+    if (client) return `Client: ${client.name}. email: ${client.email}`;
+    throw new Error("Invalid position, try again");
+  } catch (error) {
+    return error.message;
+  }
 };
 
 const findPeopleByState = (state) => {
