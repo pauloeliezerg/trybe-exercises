@@ -43,6 +43,12 @@ const checkPromo = (number) => {
   }
 };
 
+// 1. create the checkValidRange function, which should be responsible for checking whether the value entered in the number input is in the range from 1 to 10
+const checkValidRange = (number) => {
+  if (number < 1 || number > 10)
+    throw new Error("É necessário que seja um número entre 1 e 10");
+};
+
 const showPromo = (name, number) => {
   const firstText = document.querySelector("#text-initial");
   const secondText = document.querySelector("#text-final");
@@ -50,6 +56,7 @@ const showPromo = (name, number) => {
   try {
     checkName(name);
     checkNumber(parseInt(number));
+    checkValidRange(parseInt(number));
     const productObject = checkPromo(number);
 
     firstText.innerHTML = `Boas-vindas, ${name}!`;
