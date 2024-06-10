@@ -1,0 +1,91 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* 1. increase the font size */
+  font-size: large;
+  /* 4. add a little margin to the page */
+  margin: 3% 6%;
+}
+
+/* 5. center article elements */
+article {
+  text-align: center;
+}
+
+/* 2. decrease the font size of the h1 and h2 elements; set a margin for these elements */
+h1 {
+  font-size: xx-large;
+  margin: auto;
+}
+
+h2 {
+  font-size: x-large;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 6. make images appear in more than one column */
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* 3. increase the spacing between figures */
+figure {
+  flex-grow: 1;
+  margin: 0 0 25px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+/* 7. building a responsive page */
+@media screen and (min-width: 768px) {
+  body {
+    background: rgba(0, 0, 255, 0.2);
+    margin: 25px 6%;
+    padding: 3%;
+  }
+
+  figure {
+    width: 45%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: rgba(0, 255, 0, 0.2);
+    margin: 25px 10%;
+    max-width: 1130px;
+    padding: 3%;
+  }
+
+  figure {
+    width: 30%;
+    margin-right: 3%;
+  }
+}
