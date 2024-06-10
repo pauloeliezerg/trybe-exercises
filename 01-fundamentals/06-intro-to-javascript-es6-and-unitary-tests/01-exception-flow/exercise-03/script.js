@@ -112,7 +112,7 @@ const findPersonByName = (name) => {
   }
 };
 
-// 2. the findPersonByPosition() function receives a position (from the array) per parameter and returns a string with the person's name and email. Client: João da Silva. email: joao.silva@gmail.com.
+// 2. the findPersonByPosition() function receives a position (from the array) per parameter and returns a string with the person's name and email. Client: João da Silva. email: joao.silva@gmail.com
 // if the findPersonByPosition() function does not find a person by position, throw an exception with the message 'Invalid position, try again'
 const findPersonByPosition = (position) => {
   try {
@@ -124,6 +124,20 @@ const findPersonByPosition = (position) => {
   }
 };
 
+// 3. the findPeopleByState function takes a state as a parameter and returns an array containing the names of the people who live in that state
+// if the findPeopleByState function finds no people in the state, throw an exception with the message 'Oops, no people live in this state, try another one'
 const findPeopleByState = (state) => {
-  // seu código aqui
+  try {
+    const clientsOfState = [];
+
+    for (let index = 0; index < clients.length; index += 1) {
+      const client = clients[index];
+
+      if (client.address.state === state) clientsOfState.push(client.name);
+    }
+    if (clientsOfState.length) return clientsOfState;
+    throw new Error("Oops, no people live in this state, try another one");
+  } catch (error) {
+    return error.message;
+  }
 };
