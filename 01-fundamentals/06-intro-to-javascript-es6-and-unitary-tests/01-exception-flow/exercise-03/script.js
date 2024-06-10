@@ -95,8 +95,21 @@ const clients = [
   },
 ];
 
+// 1. the findPersonByName() function takes a name per parameter and returns the string: 'Recipient: Ana Santos. Address: Rua dos Girassóis, 1011, Barra, Salvador - BA. CEP: 34567-890'
+// if the findPersonByName() function does not find people in the customer list, throw an exception with the message 'Person not found, try again'
 const findPersonByName = (name) => {
-  // seu código aqui
+  try {
+    for (let index = 0; index < clients.length; index += 1) {
+      const client = clients[index];
+      const adress = client.address;
+
+      if (client.name === name)
+        return `Recipient: ${client.name}. Adress: ${adress.street}, ${adress.number}, ${adress.neighborhood}, ${adress.city} - ${adress.state}. CEP: ${adress.cep}`;
+    }
+    throw new Error("Person not found, try again");
+  } catch (error) {
+    return error.message;
+  }
 };
 
 const findPersonByPosition = (position) => {
