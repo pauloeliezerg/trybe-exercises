@@ -19,7 +19,9 @@ body {
   margin: 3% 6%;
 }
 
+/* 5. center article elements */
 article {
+  text-align: center;
 }
 
 /* 2. decrease the font size of the h1 and h2 elements; set a margin for these elements */
@@ -37,16 +39,23 @@ img {
   max-width: 100%;
 }
 
+/* 6. make images appear in more than one column */
 main {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* 3. increase the spacing between figures */
 figure {
+  flex-grow: 1;
   margin: 0 0 25px 0;
   padding: 10px;
+  text-align: center;
 }
 
 figcaption {
