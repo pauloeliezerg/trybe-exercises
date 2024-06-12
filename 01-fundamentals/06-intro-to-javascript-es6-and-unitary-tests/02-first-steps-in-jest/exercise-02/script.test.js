@@ -13,4 +13,7 @@ describe("test myFizzBuzz function", () => {
   it(`if num is a number that is not divisible by either 3 or 5, the function returns the number itself num`, () => {
     expect(myFizzBuzz(1)).toBe(1);
   });
+  it(`if num is not a number, the function returns false`, () => {
+    expect(myFizzBuzz("1")).toBe(false);
+  });
 });
