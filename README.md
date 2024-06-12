@@ -44,7 +44,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 ### ES6 Javascript and Unitary Tests - Intro
 
 - [x] _Exception flow_
-- [ ] _First steps in Jest_
+- [x] _First steps in Jest_
 - [ ] _Matchers and code coverage_
 
 ### Array methods
