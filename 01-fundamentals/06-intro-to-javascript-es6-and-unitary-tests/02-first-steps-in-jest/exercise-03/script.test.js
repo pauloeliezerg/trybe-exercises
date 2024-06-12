@@ -19,6 +19,11 @@ describe("tests the encode function", () => {
   it(`if "u" returns "5"`, () => {
     expect(encode("u")).toBe("5");
   });
+  it(`if the remaining letters are not converted`, () => {
+    expect(encode("abcdefghijklmnopqrstuvwxyz")).toBe(
+      "1bcd2fgh3jklmn4pqrst5vwxyz",
+    );
+  });
 });
 
 describe("tests the decode function", () => {
@@ -39,5 +44,8 @@ describe("tests the decode function", () => {
   });
   it(`if "5" returns "u"`, () => {
     expect(decode("5")).toBe("u");
+  });
+  it(`if the remaining numbers are not converted`, () => {
+    expect(decode("0123456789")).toBe("0aeiou6789");
   });
 });
