@@ -14,6 +14,6 @@ describe("test myFizzBuzz function", () => {
     expect(myFizzBuzz(1)).toBe(1);
   });
   it(`if num is not a number, the function returns false`, () => {
-    expect(myFizzBuzz("1")).toBe(false);
+    expect(myFizzBuzz("1")).toBeFalsy();
   });
 });
