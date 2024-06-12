@@ -1,5 +1,3 @@
-// myFizzBuzz.js
-
 function myFizzBuzz(num) {
   if (typeof num !== "number") return false;
   if (num % 3 === 0 && num % 5 === 0) return "fizzbuzz";

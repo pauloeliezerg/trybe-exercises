@@ -24,6 +24,9 @@ describe("tests the encode function", () => {
       "1bcd2fgh3jklmn4pqrst5vwxyz",
     );
   });
+  it(`if string returned has the same number of characters as the string passed as a parameter`, () => {
+    expect(encode("abc").length).toBe(3);
+  });
 });
 
 describe("tests the decode function", () => {
@@ -47,5 +50,8 @@ describe("tests the decode function", () => {
   });
   it(`if the remaining numbers are not converted`, () => {
     expect(decode("0123456789")).toBe("0aeiou6789");
+  });
+  it(`if string returned has the same number of characters as the string passed as a parameter`, () => {
+    expect(decode("abc").length).toBe(3);
   });
 });
