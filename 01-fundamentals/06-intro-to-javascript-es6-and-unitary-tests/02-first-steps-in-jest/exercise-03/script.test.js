@@ -25,4 +25,19 @@ describe("tests the decode function", () => {
   it("if decode is a function", () => {
     expect(typeof decode).toBe("function");
   });
+  it(`if "1" returns "a"`, () => {
+    expect(decode("1")).toBe("a");
+  });
+  it(`if "2" returns "e"`, () => {
+    expect(decode("2")).toBe("e");
+  });
+  it(`if "3" returns "i"`, () => {
+    expect(decode("3")).toBe("i");
+  });
+  it(`if "4" returns "o"`, () => {
+    expect(decode("4")).toBe("o");
+  });
+  it(`if "5" returns "u"`, () => {
+    expect(decode("5")).toBe("u");
+  });
 });
