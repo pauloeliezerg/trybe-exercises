@@ -45,7 +45,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 - [x] _Exception flow_
 - [x] _First steps in Jest_
-- [ ] _Matchers and code coverage_
+- [x] _Matchers and code coverage_
 
 ### Array methods
 
