@@ -11,7 +11,12 @@ describe("a função createItem", () => {
     const expectedResult = { name: "name", unit: "kg", price: 1, quantity: 0 };
     expect(item).toEqual(expectedResult);
   });
-  it.todo("Lança um erro quando não recebe parâmetros");
+  it("Lança um erro quando não recebe parâmetros", () => {
+    const item = () => {
+      createItem();
+    };
+    expect(item).toThrow();
+  });
   it.todo("Lança um erro se o nome do item não é uma string");
   it.todo("Lança um erro se o preço é negativo");
   it.todo("Lança um erro se o preço é zero");
