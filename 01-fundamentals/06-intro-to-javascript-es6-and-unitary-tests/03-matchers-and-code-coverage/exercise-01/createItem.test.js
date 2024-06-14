@@ -24,5 +24,9 @@ describe("a função createItem", () => {
     const expectedResult = new Error("O preço do item deve ser maior que zero");
     expect(item).toThrow(expectedResult);
   });
-  it.todo("Lança um erro se o preço é zero");
+  it("Lança um erro se o preço é zero", () => {
+    const item = () => createItem("name", "kg", 0, 1);
+    const expectedResult = new Error("O preço do item deve ser maior que zero");
+    expect(item).toThrow(expectedResult);
+  });
 });
