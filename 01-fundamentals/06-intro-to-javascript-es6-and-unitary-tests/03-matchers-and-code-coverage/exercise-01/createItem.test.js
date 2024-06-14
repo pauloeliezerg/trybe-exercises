@@ -8,16 +8,17 @@ describe("a função createItem", () => {
   });
   it("utiliza zero como quantidade padrão", () => {
     const item = createItem("name", "kg", 1);
-    const expectedResult = { name: "name", unit: "kg", price: 1, quantity: 0 };
-    expect(item).toEqual(expectedResult);
+    expect(item).toHaveProperty("quantity", 0);
   });
   it("Lança um erro quando não recebe parâmetros", () => {
-    const item = () => {
-      createItem();
-    };
+    const item = () => createItem();
     expect(item).toThrow();
   });
-  it.todo("Lança um erro se o nome do item não é uma string");
+  it("Lança um erro se o nome do item não é uma string", () => {
+    const item = () => createItem(1, "kg", 1, 1);
+    const expectedResult = new Error("O nome do item deve ser uma string");
+    expect(item).toThrow(expectedResult);
+  });
   it.todo("Lança um erro se o preço é negativo");
   it.todo("Lança um erro se o preço é zero");
 });
