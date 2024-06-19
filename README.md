@@ -52,8 +52,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _Array methods - map_
 - [x] _Array methods - filter and sort_
 - [x] _Array methods - find and forEach_
-- [ ] _Array methods - reduce_
-- [ ] _Live Coding_
+- [x] _Array methods - reduce_
 
 ## :hourglass_flowing_sand: Front-end
 
