@@ -38,5 +38,3 @@ const sortPokemons = (pokemonArray) =>
     if (a.level === b.level) return a.name.localeCompare(b.name);
     return b.level - a.level;
   });
-
-console.log(sortPokemons(pokemons));

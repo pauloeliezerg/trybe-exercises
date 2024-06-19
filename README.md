@@ -50,7 +50,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 ### Array methods
 
 - [x] _Array methods - map_
-- [ ] _Array methods - filter and sort_
+- [x] _Array methods - filter and sort_
 - [ ] _Array methods - find and forEach_
 - [ ] _Array methods - reduce_
 - [ ] _Live Coding_
