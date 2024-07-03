@@ -58,7 +58,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Front-end and async JavaScript - Intro
 
-- [ ] _Development Environment_
+- [x] _Development Environment_
 - [ ] _Async JavaScript - Promises and fetch_
 - [ ] _Currency Exchange_
 - [ ] _Async, await and async tests_
