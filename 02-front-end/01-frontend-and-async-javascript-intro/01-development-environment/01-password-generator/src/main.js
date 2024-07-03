@@ -12,5 +12,5 @@ passBtn.addEventListener('click', () => {
 
 displayPass.addEventListener('click', (event) => {
   copy(event.target.innerHTML);
-  alert('Passsword copied!');
+  // alert('Passsword copied!');
 });
