@@ -11,11 +11,14 @@ import {
 const usersSelect = document.querySelector('#users-select');
 
 const USERS_API = 'https://dummyjson.com/users';
-// logic to get information from users and fill in the select here
+
+// fetch the https://dummyjson.com/users API to retrieve user information; after receiving the data, pass the array returned by the API with the user information to the fillUsersSelect function so that the page select is updated
+fetch(USERS_API)
+  .then((response) => response.json())
+  .then((data) => fillUsersSelect(data.users));
 
 usersSelect.addEventListener('change', () => {
   clearPageData();
   const UserID = usersSelect.value;
 
-  // logic to get information from the selected person's posts and from the comments on the post highlighted here
 });
