@@ -1,18 +1,24 @@
-const btn = document.querySelector('button');
+import Swal from 'sweetalert2';
+
 const img = document.querySelector('img');
 const name = document.querySelector('p');
+const btn = document.querySelector('button');
+
+const API_URL = `https://akabab.github.io/superhero-api/api`;
 
 btn.addEventListener('click', () => {
   const randomNumber = Math.floor(Math.random() * 561) + 1;
 
-  fetch(`https://akabab.github.io/superhero-api/api/id/${randomNumber}.json`)
+  fetch(`${API_URL}/id/${randomNumber}.json`)
     .then((response) => response.json())
     .then((data) => {
       img.src = data.images.md;
       name.innerHTML = data.name;
     })
-    .catch(() => {
-      img.src = '';
-      name.innerHTML = `404 (Not Found)`;
-    });
-})
+    .catch((error) => Swal.fire({
+      title: 'Hero not found',
+      text: error.message,
+      icon: 'error',
+      confirmButtonText: 'Cool',
+    }));
+});

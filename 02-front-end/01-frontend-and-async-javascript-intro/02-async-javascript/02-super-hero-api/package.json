@@ -12,6 +12,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "sweetalert2": "^11.12.1",
     "vite": "^5.3.3"
   }
 }
