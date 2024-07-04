@@ -3,7 +3,7 @@
 This repository contains all the learning activities developed by _[Paulo Eliezer](https://www.linkedin.com/in/pauloeliezerg/)_ while studying at [Trybe](https://www.betrybe.com/) 🚀
 _"Trybe is a school of the future for anyone who wants to improve their life and build a successful career in technology, where people only pay when they get a good job."_
 
-## :hourglass_flowing_sand: Web Development Fundamentals
+## :white_check_mark: Web Development Fundamentals
 
 ### Unix, Shell & Git
 
@@ -59,11 +59,11 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 ### Front-end and async JavaScript - Intro
 
 - [x] _Development Environment_
-- [ ] _Async JavaScript - Promises and fetch_
+- [x] _Async JavaScript - Promises and fetch_
 - [ ] _Currency Exchange_
 - [ ] _Async, await and async tests_
 
-### Deeper dive into React
+### React - Intro
 
 - [ ] _React and Typescript - Intro_
 - [ ] _React Components and props_
@@ -72,7 +72,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [ ] _States and events_
 - [ ] _Forms_
 
-### Front-end - Intro
+### Deeper dive into React
 
 - [ ] _React Router_
 - [ ] _useEffect_
