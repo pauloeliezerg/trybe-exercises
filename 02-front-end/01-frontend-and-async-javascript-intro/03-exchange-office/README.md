@@ -7,10 +7,10 @@ The application prototype is [at this link](https://www.figma.com/file/H3gBEiF0F
 
 ### 1. Project Environment
 
-- [ ] Create a repository from scratch or fork this repository (feel free to make PRs when you finish development).
-- [ ] Start project with NPM.
-- [ ] Structure the project to use ESModules (use `type` as `module` in `package.json` and `script` tags).
-- [ ] Install Vite as Dev Tool and `npm run dev`.
+- [x] Create a repository from scratch or fork this repository (feel free to make PRs when you finish development).
+- [x] Start project with NPM.
+- [x] Structure the project to use ESModules (use `type` as `module` in `package.json` and `script` tags).
+- [x] Install Vite as Dev Tool and `npm run dev`.
 
 ### 2. Application Structure
 
