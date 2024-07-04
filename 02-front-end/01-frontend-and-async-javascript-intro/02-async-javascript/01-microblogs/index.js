@@ -26,6 +26,7 @@ usersSelect.addEventListener('change', () => {
   // 3. the request made in the previous item will return an array with the posts of the selected person; after receiving the information from the API, use the fillPosts function, passing the list of posts received, to display the posts on the screen; the first item in the array will be the highlighted post; the remaining posts are included in the list of related posts
   // 4. still using the list of posts returned by the request in item 2, get the id of the first post in the list (this will be the highlighted post) and make a request to the URL https://dummyjson.com/posts/{featuredPost.id}/ comments to get the comments of the highlighted post
   // 5. after receiving the comments from the first post from the API, use the fillFeaturedPostComments function to display them; you must pass the comments array received when returning from the API to this function
+  // 6. add a .catch to the end of the chain of all .then; if an error occurs, this .catch must call the fillErrorMessage function and pass the error message
   fetch(POST_API)
     .then((response) => response.json())
     .then((data) => {
@@ -36,5 +37,9 @@ usersSelect.addEventListener('change', () => {
       return fetch(COMMENT_API)
     })
     .then((response) => response.json())
-    .then((data) => fillFeaturedPostComments(data.comments));
+    .then((data) => fillFeaturedPostComments(data.comments))
+    .catch((error) => {
+      fillErrorMessage('Error retrieving information');
+      console.log(error.message);
+    });
 });
