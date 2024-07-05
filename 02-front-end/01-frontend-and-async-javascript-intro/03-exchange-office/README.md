@@ -14,8 +14,8 @@ The application prototype is [at this link](https://www.figma.com/file/H3gBEiF0F
 
 ### 2. Application Structure
 
-- [ ] Structure the HTML according to [prototype](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1).
-- [ ] Create semantic tags in HTML.
+- [x] Structure the HTML according to [prototype](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1).
+- [x] Create semantic tags in HTML.
 
 ### 3. Interaction with API
 
@@ -34,4 +34,4 @@ The application prototype is [at this link](https://www.figma.com/file/H3gBEiF0F
 
 ### 5. Styling (Bonus)
 
-- [ ] Implementation of [high fidelity prototype](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1)
+- [x] Implementation of [high fidelity prototype](https://www.figma.com/file/H3gBEiF0F94VESCGx9DD17/Casa-de-C%C3%A2mbio?node-id=0%3A1)
