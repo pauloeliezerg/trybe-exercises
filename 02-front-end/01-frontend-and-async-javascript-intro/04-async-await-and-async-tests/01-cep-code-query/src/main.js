@@ -15,6 +15,6 @@ async function handleClick() {
 
     preEl.innerHTML = JSON.stringify(data);
   } catch (error) {
-    alert(error.message);
+    Swal.fire('Oops', error.message, 'error');
   }
 }
