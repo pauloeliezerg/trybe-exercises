@@ -1,0 +1,69 @@
+* {
+  background-color: #282c33;
+  border-radius: 7px;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: auto;
+}
+
+#h1-1 {
+  color: #95eba8;
+}
+
+h2 {
+  background-color: #35393f;
+  margin: 14px;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  background-color: #3a3d44;
+  margin-block: 15px;
+  padding-left: 20px;
+}
+
+button {
+  background-color: #95eba8;
+  color: #373737;
+  font-weight: bold;
+}
+
+input, button {
+  border: 0px;
+  font-size: large;
+  height: 50px;
+  justify-content: center;
+  min-width: fit-content;
+  width: 20%;
+}
+
+h1, #input-container {
+  width: 60%;
+}
+
+#currency-container {
+  background-color: #35393f;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 75vh;
+  width: 60%;
+}
+
+.card {
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+  margin-block: 7px;
+  margin-inline: 11px;
+  min-width: fit-content;
+  padding: 7px;
+  text-align: center;
+  width: 16.75%;
+}
+
+.currency-value {
+  color: #ffe713;
+}

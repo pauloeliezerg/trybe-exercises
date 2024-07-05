@@ -60,7 +60,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 - [x] _Development Environment_
 - [x] _Async JavaScript - Promises and fetch_
-- [ ] _Currency Exchange_
+- [x] _Exchange Office_
 - [ ] _Async, await and async tests_
 
 ### React - Intro
