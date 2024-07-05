@@ -28,9 +28,9 @@ The application prototype is [at this link](https://www.figma.com/file/H3gBEiF0F
 
 ### 4. Error Handling
 
-- [ ] You should use [Sweet Alert 2](https://sweetalert2.github.io/) for Error messages.
-- [ ] An error should appear when no coins are passed.
-- [ ] An error should appear when a non-existent coin is passed.
+- [x] You should use [Sweet Alert 2](https://sweetalert2.github.io/) for Error messages.
+- [x] An error should appear when no coins are passed.
+- [x] An error should appear when a non-existent coin is passed.
 
 ### 5. Styling (Bonus)
 
