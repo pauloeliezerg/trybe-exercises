@@ -19,9 +19,9 @@ The application prototype is [at this link](https://www.figma.com/file/H3gBEiF0F
 
 ### 3. Interaction with API
 
-- [ ] The API endpoint that should be used is `https://v6.exchangerate-api.com/v6/${SUA_API_KEY}/latest/${moeda}`.
-- [ ] The currency to be searched must be passed as the _endpoint_ `currency` parameter.
-- [ ] All currencies should be listed on the screen.
+- [x] The API endpoint that should be used is `https://v6.exchangerate-api.com/v6/${SUA_API_KEY}/latest/${moeda}`.
+- [x] The currency to be searched must be passed as the _endpoint_ `currency` parameter.
+- [x] All currencies should be listed on the screen.
 
 > You will need to register for free, and remember to use `.env` to store your `api_key`
 > [API documentation link](https://www.exchangerate-api.com/docs/overview) if necessary
