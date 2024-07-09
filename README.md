@@ -66,7 +66,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 ### React - Intro
 
 - [x] _React and Typescript - Intro_
-- [ ] _React Components and props_
+- [x] _React Components and props_
 - [ ] _Deeper dive in React Components_
 - [ ] _Review - Solar System_
 - [ ] _States and events_
