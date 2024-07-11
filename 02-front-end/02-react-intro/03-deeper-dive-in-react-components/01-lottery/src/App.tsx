@@ -1,7 +1,15 @@
+import Greeting from './components/Greeeting';
+import LuckyNumbers from './components/LuckyNumbers';
+
+import './App.css';
+
 function App() {
+    const lotto = [7, 21, 59, 12, 42, 30];
+
     return (
         <>
-            <h1>Hello World</h1>
+            <Greeting person={{ firstName: 'Chapolin', lastName: 'Colorado' }} />
+            <LuckyNumbers />
         </>
     );
 }
