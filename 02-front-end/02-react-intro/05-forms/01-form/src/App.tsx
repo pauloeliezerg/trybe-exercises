@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 function App() {
     const [name, setName] = useState('');
@@ -6,9 +6,21 @@ function App() {
     const [schooling, setSchooling] = useState('high-school');
     const [resume, setResume] = useState('');
   
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+        event.preventDefault();
+        alert(
+            `Name: ${name}
+            Email: ${email}
+            Schooling: ${schooling}
+            Resume: ${resume}`
+        );
+    }
+
     return (
         <>
-            <form>
+            <form
+                onSubmit={(event) => handleSubmit(event)}
+            >
                 <label>
                     Name
                     <input 
