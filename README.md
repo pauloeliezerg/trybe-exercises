@@ -69,13 +69,12 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _React Components and props_
 - [x] _Deeper dive in React Components_
 - [x] _States and events_
-- [ ] _Forms_
+- [x] _Forms_
 
 ### Deeper dive into React
 
 - [ ] _React Router_
 - [ ] _useEffect_
-- [ ] _Review - Cloning Twitter_
 
 ### Automated tests with React Test Library
 
