@@ -6,23 +6,27 @@ function App() {
     const [schooling, setSchooling] = useState('high-school');
     const [resume, setResume] = useState('');
     const [terms, setTerms] = useState(false);
+    const [error, setError] = useState(false);
 
     function resetForm() {
         setName('');
         setEmail('');
         setSchooling('high-school');
         setResume('');
+        setError(false);
     }
-  
+
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
-        alert(
-            `Name: ${name}
-            Email: ${email}
-            Schooling: ${schooling}
-            Resume: ${resume}`
-        );
-        resetForm();
+        if (terms) {
+            alert(
+                `Name: ${name}
+                Email: ${email}
+                Schooling: ${schooling}
+                Resume: ${resume}`
+            );
+            resetForm();
+        } else setError(true);
     }
 
     return (
@@ -72,6 +76,11 @@ function App() {
                 </label>
                 <button>Send</button>
             </form>
+            {error && (
+                <h4>
+                    You need to accept the terms and conditions to be able to submit your CV
+                </h4>
+            )}
         </>
     );
 }
