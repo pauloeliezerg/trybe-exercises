@@ -5,6 +5,7 @@ function App() {
     const [email, setEmail] = useState('');
     const [schooling, setSchooling] = useState('high-school');
     const [resume, setResume] = useState('');
+    const [terms, setTerms] = useState(false);
 
     function resetForm() {
         setName('');
@@ -59,6 +60,14 @@ function App() {
                     <textarea
                         value={resume}
                         onChange={({ target }) => setResume(target.value)}
+                    />
+                </label>
+                <label>
+                    I have read and accept the terms and conditions
+                    <input
+                        type="checkbox"
+                        checked={terms}
+                        onChange={() => setTerms((terms) => !terms)}
                     />
                 </label>
                 <button>Send</button>
