@@ -5,6 +5,13 @@ function App() {
     const [email, setEmail] = useState('');
     const [schooling, setSchooling] = useState('high-school');
     const [resume, setResume] = useState('');
+
+    function resetForm() {
+        setName('');
+        setEmail('');
+        setSchooling('high-school');
+        setResume('');
+    }
   
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
@@ -14,6 +21,7 @@ function App() {
             Schooling: ${schooling}
             Resume: ${resume}`
         );
+        resetForm();
     }
 
     return (
