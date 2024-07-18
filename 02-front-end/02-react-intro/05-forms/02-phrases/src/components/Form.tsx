@@ -1,11 +1,16 @@
 import { useState } from 'react';
 
-function Form() {
+type FormProps = {
+  newPhrase: (param: string) => void;
+};
+
+function Form({ newPhrase }: FormProps) {
     const [phrase, setPhrase] = useState('');
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (phrase) {
+            newPhrase(phrase);
             setPhrase('');
         }
     };
