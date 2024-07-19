@@ -12,6 +12,7 @@ function CoffeeList() {
                 { coffeeList.map(
                     (coffee) => (
                         <button
+                            key={ coffee.id }
                             className='coffee-card'
                             style={{
                                 backgroundImage: `url(${coffee.image})`,
