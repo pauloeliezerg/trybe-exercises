@@ -73,7 +73,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Deeper dive into React
 
-- [ ] _React Router_
+- [x] _React Router_
 - [ ] _useEffect_
 
 ### Automated tests with React Test Library
