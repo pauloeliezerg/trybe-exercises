@@ -8,15 +8,22 @@ type Coordinates = {
 
 function App() {
     const [coordinates, setCoordinates] = useState<Coordinates | null>(null);
+    const [loading, setLoading] = useState(true);
+    
     useEffect(() => {
         async function fetchData() {
             const data = await fetchCoordinates();
             const { latitude, longitude } = data;
 
             setCoordinates({ latitude, longitude });
+            setLoading(false);
         }
         fetchData();
     }, []);
+
+    if(loading) {
+        return <h1>Loading...</h1>;
+    }
 
     return (
         <>
