@@ -25,11 +25,12 @@ function InputTodo({ addTodo }: Props) {
           type="text"
           value={ textTodo }
           onChange={ changeTextTodo }
-        />
+          />
       </label>
       <button
         type="button"
         onClick={ addItem }
+        disabled={ textTodo === '' }
       >
         Adicionar
       </button>

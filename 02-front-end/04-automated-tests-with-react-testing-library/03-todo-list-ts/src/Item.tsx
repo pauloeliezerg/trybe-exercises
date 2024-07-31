@@ -8,7 +8,7 @@ function Item(props: Props) {
   const { content } = props;
   return (
     <div className="Item">
-      {content}
+      { content }
     </div>
   );
 }

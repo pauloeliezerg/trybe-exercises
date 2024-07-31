@@ -9,6 +9,10 @@ function App() {
     setListTodo([...listTodo, todo]);
   };
 
+  const removeTodo = (indexTodo) => {
+    setListTodo(listTodo.filter((_, index) => index !== indexTodo));
+  };
+
   return (
     <main className="App">
       <InputTodo
@@ -18,6 +22,10 @@ function App() {
         { listTodo.map((todo, index) => (
           <li key={ index }>
             <Item content={ todo } />
+            <button
+              type="button"
+              onClick={ () => removeTodo(index) }
+            >Remover</button>
           </li>
         )) }
       </ul>
