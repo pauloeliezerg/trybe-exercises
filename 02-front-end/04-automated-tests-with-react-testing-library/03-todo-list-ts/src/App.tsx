@@ -6,12 +6,14 @@ function App() {
   const [listTodo, setListTodo] = useState<string[]>([]);
 
   const addTodo = (todo: string) => {
-    setListTodo((prevTodo) => [...prevTodo, todo]);
+    setListTodo([...listTodo, todo]);
   };
 
   return (
     <main className="App">
-      <InputTodo addTodo={ addTodo } />
+      <InputTodo
+        addTodo={ addTodo }
+      />
       <ul>
         { listTodo.map((todo, index) => (
           <li key={ index }>
