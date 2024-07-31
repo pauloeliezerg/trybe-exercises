@@ -78,7 +78,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Automated tests with React Test Library
 
-- [ ] _React Testing Library - Intro_
+- [x] _React Testing Library - Intro_
 - [ ] _RTL - Mocks_
 - [ ] _RTL - Testing with React Router_
 
