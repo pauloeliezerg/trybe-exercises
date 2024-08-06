@@ -22,4 +22,13 @@ describe('Testes das rotas da aplicação', async () => {
     const aboutTitle = screen.getByRole('heading', { name: /About/i });
     expect(aboutTitle).toBeInTheDocument();
   });
+  it('Ao tentar acessar uma rota inexistente, a pessoa usuária é direcionada para a página Not Found. Teste se os elementos da página Not Found estarão presentes', () => {
+    renderWithRouter(<App />, { route: '/qwerty' });
+    const notFoundTitle = screen.getByRole('heading', { name: /Page Not Found/i });
+    const notFountText = screen.getByText(`A página que você está procurando não existe!`);
+    const notFoundImg = screen.getByRole('img', { name: /Digimon nocauteado/i });
+    expect(notFoundTitle).toBeInTheDocument();
+    expect(notFountText).toBeInTheDocument();
+    expect(notFoundImg).toBeInTheDocument();
+  });
 });
