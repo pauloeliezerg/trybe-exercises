@@ -7,6 +7,10 @@ describe('Testes das rotas da aplicação', () => {
     renderWithRouter(<App />);
 
     const title = screen.getByRole('heading', { name: /Search Digimon/i });
+    const about = screen.getByRole('link', { name: /About/i });
+    const search = screen.getByRole('link', { name: /Search Digimon/i });
     expect(title).toBeInTheDocument();
+    expect(about).toBeInTheDocument();
+    expect(search).toBeInTheDocument();
   });
 });
