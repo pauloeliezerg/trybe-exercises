@@ -3,6 +3,8 @@ import { renderWithRouter } from '../utils/renderWithRouter';
 import { screen } from '@testing-library/react';
 
 describe('Testes de busca por Digimon', async () => {
+  afterEach(() => vi.clearAllMocks());
+
   it('É possível inserir um valor na caixa de busca', async () => {
     const { user } = renderWithRouter(<App />);
     const input = screen.getByRole('textbox', { name: /Digimon/i });
@@ -55,12 +57,18 @@ describe('Testes de busca por Digimon', async () => {
     const input = screen.getByRole('textbox', { name: /Digimon/i });
     const button = screen.getByRole('button', { name: /Search Digimon/i });
     await user.type(input, 'Pikachu');
+    expect(global.fetch).toBeCalledTimes(0);
     await user.click(button);
     const errorMsg = await screen.findByText('Pikachu is not a Digimon in our database.');
     expect(errorMsg).toBeInTheDocument();
     expect(global.fetch).toBeCalledTimes(1);
   });
-  it('A aplicação não realiza fetch caso a busca seja feita com o input vazio', () => {
-
+  it('A aplicação não realiza fetch caso a busca seja feita com o input vazio', async () => {
+    const { user } = renderWithRouter(<App />);
+    const input = screen.getByRole('textbox', { name: /Digimon/i });
+    const button = screen.getByRole('button', { name: /Search Digimon/i });
+    expect(input).toHaveValue('');
+    await user.click(button);
+    expect(global.fetch).toBeCalledTimes(0);
   });
 });
