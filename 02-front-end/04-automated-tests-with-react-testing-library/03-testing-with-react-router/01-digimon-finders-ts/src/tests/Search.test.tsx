@@ -5,12 +5,14 @@ import { screen } from '@testing-library/react';
 describe('Testes de busca por Digimon', async () => {
   it('É possível inserir um valor na caixa de busca', async () => {
     const { user } = renderWithRouter(<App />);
-    const input = screen.getByRole('textbox', { name: /Digimoan/i });
+    const input = screen.getByRole('textbox', { name: /Digimon/i });
     await user.type(input, 'qwerty');
     expect(input).toHaveValue('qwerty');
   });
   it('A tela inicia sem nenhum Digimon renderizado (data-testid=digimonName não está na tela)', () => {
-
+    renderWithRouter(<App />);
+    const renderedDigimon = screen.queryByTestId('digimonName');
+    expect(renderedDigimon).not.toBeInTheDocument();
   });
   it('É possível buscar um Digimon com sucesso', () => {
 
