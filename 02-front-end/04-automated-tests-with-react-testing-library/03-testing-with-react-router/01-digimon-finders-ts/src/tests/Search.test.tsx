@@ -1,6 +1,7 @@
 import App from '../App';
 import { renderWithRouter } from '../utils/renderWithRouter';
-import { screen } from '@testing-library/react';
+import { screen, waitFor } from '@testing-library/react';
+import { vi } from 'vitest';
 
 describe('Testes de busca por Digimon', async () => {
   afterEach(() => vi.clearAllMocks());
@@ -71,4 +72,23 @@ describe('Testes de busca por Digimon', async () => {
     await user.click(button);
     expect(global.fetch).toBeCalledTimes(0);
   });
+  it('A busca falha (erro no servidor)', async () => {
+    vi.spyOn(global, 'fetch');
+    await (global.fetch as any).mockRejectedValue(
+      new Error('Oops! Algo de errado não está certo!'),
+    );
+    vi.spyOn(global.console, 'log');
+    const { user } = renderWithRouter(<App />);
+    const input = screen.getByRole('textbox', { name: /Digimon/i });
+    const button = screen.getByRole('button', { name: /Search Digimon/i });
+    await user.type(input, 'qwerty');
+    await user.click(button);
+    await waitFor(() => {
+      expect(global.fetch).toBeCalledTimes(1);
+      expect(console.log).toHaveBeenCalledTimes(1);
+      expect(console.log).toBeCalledWith(
+        'Erro ao fazer a requisição: Error: Oops! Algo de errado não está certo!',
+      );
+    })
+  })
 });
