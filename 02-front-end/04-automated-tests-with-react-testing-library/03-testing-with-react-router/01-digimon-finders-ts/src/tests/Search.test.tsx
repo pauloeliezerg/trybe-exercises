@@ -44,8 +44,21 @@ describe('Testes de busca por Digimon', async () => {
     const digimonImage = await screen.findByText('Agumon');
     expect(digimonImage).toBeInTheDocument();
   });
-  it('A mensagem de erro é renderizada caso o Digimon buscado não exista', () => {
+  it('A mensagem de erro é renderizada caso o Digimon buscado não exista', async () => {
+    const ErrorMsg = 'Pikachu is not a Digimon in our database.';
 
+    global.fetch = vi.fn(() => Promise.resolve({
+      json: () => Promise.resolve({ ErrorMsg }),
+    })) as any;
+
+    const { user } = renderWithRouter(<App />);
+    const input = screen.getByRole('textbox', { name: /Digimon/i });
+    const button = screen.getByRole('button', { name: /Search Digimon/i });
+    await user.type(input, 'Pikachu');
+    await user.click(button);
+    const errorMsg = await screen.findByText('Pikachu is not a Digimon in our database.');
+    expect(errorMsg).toBeInTheDocument();
+    expect(global.fetch).toBeCalledTimes(1);
   });
   it('A aplicação não realiza fetch caso a busca seja feita com o input vazio', () => {
 
