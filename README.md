@@ -84,8 +84,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Styling and Agile Practices
 
-- [ ] _Agile Practices_
-- [ ] _CSS Modules_
+- [x] _CSS Modules_
 - [ ] _Styled Components_
 
 ### Stage management with Redux
