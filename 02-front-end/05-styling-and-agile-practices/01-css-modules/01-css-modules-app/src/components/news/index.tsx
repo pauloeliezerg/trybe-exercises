@@ -1,4 +1,4 @@
-import './news.css';
+import styles from './news.module.css';
 
 type NewsProps = {
   title: string;
@@ -7,9 +7,9 @@ type NewsProps = {
 
 function News({ title, content }: NewsProps) {
   return (
-    <div className="container">
-      <h2 className="title">{title}</h2>
-      <p className="text" text>
+    <div className={styles.container}>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.text}>
         {content}
       </p>
     </div>
