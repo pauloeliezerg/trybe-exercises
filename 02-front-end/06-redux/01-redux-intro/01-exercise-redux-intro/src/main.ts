@@ -15,4 +15,12 @@ btnNext.addEventListener('click', () => {
   store.dispatch(nextColor());
 });
 
-// realiza o subscribe da store
+store.subscribe(() => {
+  const { colors, index } = store.getState();
+
+  const value = document.getElementById('value') as HTMLSpanElement;
+  const container = document.getElementById('container') as HTMLDivElement;
+
+  value.innerHTML = colors[index];
+  container.style.backgroundColor = colors[index];
+})

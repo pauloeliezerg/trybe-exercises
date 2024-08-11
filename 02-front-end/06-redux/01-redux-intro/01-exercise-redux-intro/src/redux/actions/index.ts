@@ -1,5 +1,5 @@
 const action = {
-  previousColor: () => ({ type: 'PREVIOUS_COLOR '}),
+  previousColor: () => ({ type: 'PREVIOUS_COLOR' }),
   nextColor: () => ({ type: 'NEXT_COLOR' }),
 };
 
