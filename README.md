@@ -63,7 +63,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _Exchange Office_
 - [x] _Async, await and async tests_
 
-### React - Intro
+### React
 
 - [x] _React and Typescript - Intro_
 - [x] _React Components and props_
@@ -87,9 +87,9 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _CSS Modules_
 - [x] _Styled Components_
 
-### Stage management with Redux
+### Redux: The global state of the application
 
-- [ ] _Redux - Intro_
+- [x] _Redux - Intro_
 - [ ] _Using Redux on React_
 - [ ] _Review - Using Redux on React_
 - [ ] _Redux on React - Async actions_
