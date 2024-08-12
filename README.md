@@ -90,7 +90,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 ### Redux: The global state of the application
 
 - [x] _Redux - Intro_
-- [ ] _Using Redux on React_
+- [x] _Using Redux on React_
 - [ ] _Review - Using Redux on React_
 - [ ] _Redux on React - Async actions_
 - [ ] _React-Redux tests_
