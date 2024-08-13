@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Dispatch, ReduxState } from "./types";
 import { fetchDogImage } from "./redux/actions";
+import './App.css';
 
 function App() {
   const rootState = useSelector((state: ReduxState) => state);
