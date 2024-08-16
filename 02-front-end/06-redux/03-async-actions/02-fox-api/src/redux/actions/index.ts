@@ -1,3 +1,5 @@
+import { Dispatch } from '../../types';
+
 export const REQUEST_API = 'REQUEST_API';
 export const GET_PICTURE = 'GET_PICTURE';
 
@@ -9,5 +11,14 @@ export const getPicture = (image: string) => ({
 });
 
 export function fetchAPI() {
-  // Criar
+  return async (dispatch: Dispatch) => {
+    try {
+      dispatch(requestAPI());
+      const response = await fetch('https://randomfox.ca/floof/');
+      const data = await response.json();
+      dispatch(getPicture(data.image));
+    } catch (error) {
+      console.log(error);
+    }
+  };
 }
