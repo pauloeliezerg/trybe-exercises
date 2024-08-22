@@ -9,14 +9,14 @@ export type RootState = {
 };
 
 function App() {
-  const rootState = useSelector((state: RootState) => state);
+  const { count: counter } = useSelector((state: RootState) => state.counterReducer);
   const dispatch = useDispatch();
 
   return (
     <main>
       <div className="counter-container">
         <h1>Contador</h1>
-        <h2>{rootState.counterReducer.count}</h2>
+        <h2>{counter}</h2>
       </div>
       <div className="button-container">
         <button onClick={() => dispatch(actionCreator())}>Incrementa 1</button>
