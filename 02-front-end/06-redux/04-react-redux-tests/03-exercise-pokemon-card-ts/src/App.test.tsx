@@ -1,11 +1,13 @@
-// import { screen, waitForElementToBeRemoved } from '@testing-library/react';
+import { screen, waitForElementToBeRemoved } from '@testing-library/react';
 import { vi } from 'vitest';
 // import userEvent from '@testing-library/user-event';
 import mockFetch from './__mocks__/mockFetch';
-// import renderWithRedux from './helpers/renderWithRedux';
-// import App from './App';
+import renderWithRedux from './helpers/renderWithRedux';
+import App from './App';
 // import randomNumber from './utils/randomNumber';
+import '@testing-library/jest-dom';
 
+const LOADING_TEXT = 'Loading...';
 
 describe('Página principal', () => {
   beforeEach(() => {
@@ -16,8 +18,14 @@ describe('Página principal', () => {
     vi.clearAllMocks();
   });
 
-  test.skip('1 - Verifica se o botão de "Próximo Pokémon" está presente na tela', async () => {
-    // Remova o 'skip' e implemente seu teste
+  test('1 - Verifica se o botão de "Próximo Pokémon" está presente na tela', async () => {
+    renderWithRedux(<App />);
+    await waitForElementToBeRemoved(() => screen.getByText(LOADING_TEXT));
+
+    expect(global.fetch).toHaveBeenCalledTimes(1);
+
+    const button = await screen.findByRole('button');
+    expect(button).toBeInTheDocument();
   });
 
   test.skip('2 - Verifica se foi feita uma requisição à API após carregar a página', async () => {
