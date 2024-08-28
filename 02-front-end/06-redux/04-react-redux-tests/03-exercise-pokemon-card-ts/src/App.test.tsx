@@ -67,8 +67,15 @@ describe('Página principal', () => {
     expect(global.fetch).toHaveBeenCalledTimes(2);
     expect(global.fetch).toHaveBeenCalledWith(secondEndPoint);
   });
+  
+  test('4 - Verifica se os elementos contendo as informações do Pokémon são renderizados', async () => {
+    renderWithRedux(<App />);
+    await waitForElementToBeRemoved(() => screen.getByText(LOADING_TEXT));
+    
+    const pokemonName = screen.getByTestId('pokemon-name');
+    const pokemonImg = screen.getByAltText('pokemon');
 
-  test.skip('4 - Verifica se os elementos contendo as informações do Pokémon são renderizados', async () => {
-    // Remova o 'skip' e implemente seu teste
+    expect(pokemonName).toBeInTheDocument();
+    expect(pokemonImg).toBeInTheDocument();
   });
 });
