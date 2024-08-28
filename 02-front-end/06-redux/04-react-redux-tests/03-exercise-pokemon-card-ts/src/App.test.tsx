@@ -1,11 +1,13 @@
-import { screen, waitForElementToBeRemoved } from '@testing-library/react';
+import { screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react';
 import { vi } from 'vitest';
 // import userEvent from '@testing-library/user-event';
 import mockFetch from './__mocks__/mockFetch';
 import renderWithRedux from './helpers/renderWithRedux';
 import App from './App';
-// import randomNumber from './utils/randomNumber';
+import randomNumber from './utils/randomNumber';
 import '@testing-library/jest-dom';
+
+vi.mock('./utils/randomNumber');
 
 const LOADING_TEXT = 'Loading...';
 
@@ -28,8 +30,17 @@ describe('Página principal', () => {
     expect(button).toBeInTheDocument();
   });
 
-  test.skip('2 - Verifica se foi feita uma requisição à API após carregar a página', async () => {
-    // Remova o 'skip' e implemente seu teste
+  test('2 - Verifica se foi feita uma requisição à API após carregar a página', async () => {
+    const firstPokemonId = 656;
+    const firstEndPoint = 'https://pokeapi.co/api/v2/pokemon/656/';
+
+    (randomNumber as any).mockReturnValue(firstPokemonId);
+
+    renderWithRedux(<App />);
+    await waitForElementToBeRemoved(() => screen.getByText(LOADING_TEXT));
+
+    expect(global.fetch).toHaveBeenCalledTimes(1);
+    expect(global.fetch).toHaveBeenCalledWith(firstEndPoint);
   });
 
   test.skip('3 - Verifica se o endpoint da requisição é alterado ao clicar no botão', async () => {
