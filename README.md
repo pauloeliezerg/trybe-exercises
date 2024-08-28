@@ -92,7 +92,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 - [x] _Redux - Intro_
 - [x] _Using Redux on React_
 - [x] _Redux on React - Async actions_
-- [ ] _React-Redux tests_
+- [x] _React-Redux tests_
 
 ### Class Component, Context API and Custom Hooks
 
