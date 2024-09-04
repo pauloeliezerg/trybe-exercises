@@ -1,36 +1,41 @@
 import React from 'react';
+import Loading from './Loading';
 
 class App extends React.Component {
   state = {
-    count: 1,
+    isLoading: true,
+    dogImageUrl: '',
   };
 
   componentDidMount(): void {
       console.log('Component did mount!');
+      this.handleFetch();
   };
 
   componentDidUpdate(): void {
       console.log('Component did uptade!');
   };
 
-  handleClick = () => {
-    const { count } = this.state;
-
+  handleFetch = async () => {
+    const response = await fetch('https://dog.ceo/api/breeds/image/random');
+    const data = await response.json();
     this.setState({
-      count: count + 1,
+      isLoading: false,
+      dogImageUrl: data.message,
     });
-  };
+  }
 
   render(): React.ReactNode {
-    const { count } = this.state;
+    const { isLoading, dogImageUrl } = this.state;
+
+    if (isLoading) return <Loading />
+
     return (
       <>
-        <h1>Counter</h1>
-        <button
-          onClick={ this.handleClick }
-        >
-          { count }
-        </button>
+        <h1>Random Dog</h1>
+        <img
+          src={ dogImageUrl }
+        />
       </>
     );
   }
