@@ -96,7 +96,7 @@ _"Trybe is a school of the future for anyone who wants to improve their life and
 
 ### Class Component, Context API and Custom Hooks
 
-- [ ] _Class Components_
+- [x] _Class Components_
 - [ ] _Context API_
 - [ ] _Customized Hooks_
 
